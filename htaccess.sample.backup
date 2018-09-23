@@ -1,0 +1,12 @@
+# Sample .htaccess file
+# Rename this file to ".htaccess" in your www directory in order to
+# serve content from that directory and all of its subdirectories 
+# via the SCS web servers.
+# 
+# Do not copy this file to your main AFS directory or any other directory
+# that you wish to keep private.
+
+<Limit GET>
+order deny,allow
+allow from all
+</Limit>

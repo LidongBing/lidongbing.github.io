@@ -1,0 +1,25 @@
+h1,h2,h3
+{
+font-family: arial, 'sans serif'; 
+}
+
+h3.sec:first-letter
+{
+font-size:x-large;
+}
+
+h3.sec
+{
+background-color:lightblue
+}
+
+body
+{
+background-color:white;
+}
+
+a:active  {}
+a:hover   {background-color:yellow}
+
+a.nav:active  {color:red}
+a.nav:hover   {color:red;background-color:lightblue}
