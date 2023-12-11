@@ -41,7 +41,7 @@ binglidong<img valign="bottom" src="./img/a_a_t_t.gif" height="15" width="15"/>g
 </font>
 -->
 	
-<p><font size="5">[
+<!--<p><font size="5">[
 <a href="#Biography">Biography</a> |
 <a href="#News">News</a> |
 <!-- <a class="nav" href="#Research_Interests">Research Interests</a> |
@@ -51,9 +51,40 @@ binglidong<img valign="bottom" src="./img/a_a_t_t.gif" height="15" width="15"/>g
 <a href="#Codes">Code</a> |
 <a href="#Datasets">Dataset</a> |
 <a href="#Professional_Activities">Professional Service</a>
-<!-- <a href="#Teaching">Teaching</a>  -->
+<a href="#Teaching">Teaching</a>  
 ]
-</font></p>
+</font></p>-->
+
+<!--Navigation bar-->
+  <div id="menu">
+    <div>
+      <a href="#Biography">Biography</a>
+    </div>
+    <div>
+      <a href="#News">News</a>
+    </div>
+    <div>
+      <a href="#Publications">Publication</a>
+    </div>
+    <div>
+      <a href="#teaching">Talks</a>
+    </div>
+    <div>
+      <a href="#Professional_Activities">Professional Service</a>
+    </div>
+    <script>
+      $(function () {
+        const current = window.location.pathname.split("/");
+        $('#menu div a').each(function(){
+          const $this = $(this);
+          if (current.indexOf($this.attr("href")) !== -1) {
+            $this.parent().addClass("now");
+          }
+        })
+      });
+    </script>
+  </div>
+  <!--end of Navigation bar-->
 
 <h3><a name="Biography"></a><hr color="#666699" noshade="noshade" size="2"/>Biography</h3>
 <p><font size="3.5"> 
