@@ -1,0 +1,1803 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- 
+The design of this website is based on https://nlp.stanford.edu/~johnhew/ and modified by Wenxuan Zhang (isakzhang AT gmail).
+PLS ask for permission & add a link to this website before you directly copy and apply to yours 
+-->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title> Lidong Bing's Homepage </title>
+  <meta name="keywords" content="Lidong Bing, 邴立东, Alibaba DAMO, Language Technology Lab, NLP, Large Language Models">
+  <meta name="robots" content="index,follow">
+  <link rel="stylesheet" href="./style.css">
+  <link href='https://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134238626-1"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-134238626-1');
+  </script>
+
+</head>
+
+<body>
+  <div class="container content"> 
+  <main>
+  <div class="home">
+
+  <div class="mini-intro">
+  <img class="avatar" src="img/bing_australia.jpg" alt="LidongBing-photo">
+
+  <h2 id="l.bing">Lidong Bing <span style="font-family:STFangsong">(邴立东)</span></h2>
+  Director
+  <br>Language Technology Lab
+  <br>DAMO Academy, Alibaba Group
+  <br>
+  Contact: <code class="language-plaintext highlighter-rouge">l.bing [at] alibaba-inc.com, binglidong [at] gmail.com</code>
+<br>
+<br>
+<p> 
+<font color="#FF4500"> 
+<b>JOB OPENINGS NOW!!</b> (<i>Updated in Oct. 2023</i>): <br/> (1) Full-time positions for both 
+  <i>fresh graduates</i> (<a href="https://talent-holding.alibaba.com/campus/position-detail?bgCode=YKCNU1&lang=zh&positionId=2020697" target="_blank">NLP</a>, 
+  <a href="https://talent-holding.alibaba.com/campus/position-detail?bgCode=YKCNU1&lang=zh&positionId=2024103" target="_blank">multimodality</a>) and 
+  <i>experienced candidates</i> (<a href="https://talent-holding.alibaba.com/off-campus/position-detail?lang=zh&positionId=1033435&track_id=SSP1697883314282SyjhtFsJyZ4317" target="_blank">NLP</a>, 
+  <a href="https://talent-holding.alibaba.com/off-campus/position-detail?lang=zh&positionId=1032935&track_id=SSP1697883314282jteAyZHEFd7386" target="_blank">multimodality</a>) <br/>
+  (2) For intern positions, send your CV to binglidong [at] gmail [dot] com and l.bing [at] alibaba-inc [dot] com <br/>
+  (3) Base locations: China (Beijing, Hangzhou), Singapore 
+</font>
+</p>
+  <div id="menu">
+    <div>
+      <a href="#Biography">Bio</a>
+    </div>
+    <div>
+      <a href="#News">News</a>
+    </div>
+    <div>
+      <a href="#Publications">Publication</a>
+    </div>
+    <div>
+      <a href="#Talks">Talk</a>
+    </div>
+    <div>
+      <a href="#Professional_Activities">Service</a>
+    </div>
+    <script>
+      $(function () {
+        const current = window.location.pathname.split("/");
+        $('#menu div a').each(function(){
+          const $this = $(this);
+          if (current.indexOf($this.attr("href")) !== -1) {
+            $this.parent().addClass("now");
+          }
+        })
+      });
+    </script>
+  </div>
+
+  
+<h3><a name="Biography"></a>Biography</h3>
+
+<p>
+ Lidong Bing is the director of the Language Technology Lab at DAMO Academy of Alibaba Group. 
+He received a Ph.D. from The Chinese University of Hong Kong and was a postdoc research fellow at Carnegie Mellon University. 
+His research interests include various low-resource and multilingual NLP problems, large language models and their applications, etc.
+Currently, he is serving as an Action Editor for Transactions of the Association for Computational Linguistics (TACL) and ACL Rolling Review (ARR), 
+as well as Area Chair for AI conferences and Associate Editor for AI journals.
+</p> 
+
+  <h3 id="News">News</h3>
+    <ul>
+
+    <li> 
+    Nov 2023. We released an LLM, named SeaLLLMs (<a href="https://arxiv.org/abs/2312.00738">Paper</a> <a href="https://huggingface.co/SeaLLMs/SeaLLM-Chat-13b">DEMO</a>), which has quite good capabilities for the languages in Southeast Asia. </li>
+    
+        
+    <li> 
+    Nov 2023. We proposed <a href="https://arxiv.org/abs/2311.09277">Contrastive Chain-of-Thought Prompting</a>, which for the first time explores whether LLMs can also learn from the invalid chain of thought. </li>
+        
+    <li> 
+    Oct 2023. Seven papers were accepted at <a href="https://2023.emnlp.org/">EMNLP 2023</a>. </li>
+          
+    <li> 
+    Sep 2023. Two papers were accepted at <a href="https://nips.cc/">NeurIPS 2023</a>. </li>
+
+    <li> 
+    June 2023. Serve as an AC of <a href="https://2023.emnlp.org/">EMNLP 2023</a> for the theme track: Large Language Models and the Future of NLP. </li>
+
+    <li> 
+    May 2023. 17 papers were accepted at <a href="https://2023.aclweb.org/">ACL 2023</a>, 10 at the main conference, and 7 at the findings. </li>
+
+    <li> 
+    Dec 2022. Invited to serve as an AC of <a href="https://2023.aclweb.org/">ACL 2023</a>. </li>
+    
+    <!--<li> 
+    Oct 2022. Eight papers were accepted at the main conference of <a href="https://2022.emnlp.org/">EMNLP 2022</a>. </li>
+    
+    <li> 
+    Sep 2022. Three papers were accepted at <a href="https://coling2022.org/">COLING 2022</a> main conference. </li>
+    
+    <li> 
+    April 2022. Invited to serve as an Action Editor for <a href="https://transacl.org/ojs/index.php/tacl/index">TACL</a>. </li>
+        
+          <li> 
+    Feb 2022. Six papers were accepted at <a href="https://2022.aclweb.org/">ACL 2022</a>, 3 at the main conference and 3 at the findings. </li>
+         
+    <li> 
+    Oct 2021. Invited to serve as an Action Editor for <a href="https://aclrollingreview.org/">ACL Rolling Review</a>. </li>
+        
+    <li> 
+    Aug 2021. Four papers were accepted at <a href="https://2021.emnlp.org/">EMNLP 2021</a>, 2 at the main conference and 2 at the findings. </li>
+        
+          <li> 
+    May 2021. Seven papers were accepted at <a href="https://2021.aclweb.org/">ACL 2021</a> main conference. </li>
+        
+    <li> 
+    April 2021. Invited to serve as an AC of <a href="https://2021.emnlp.org/">EMNLP 2021</a> for the Sentiment Analysis, Stylistic Analysis, and Argument Mining track. </li>
+       
+       
+    <li> 
+    Jan 2021. Invited to serve as a Social Media Co-Chair of <a href="https://2021.aclweb.org/">ACL 2021</a>. </li>
+        
+        
+    <li> 
+    Nov 2020. Invited to serve as an AC of <a href="https://2021.aclweb.org/">ACL 2021</a> for the Sentiment Analysis, Stylistic Analysis, and Argument Mining track. </li>
+        
+        
+    <li> 
+    Sep 2020. Ten papers were accepted at <a href="https://2020.emnlp.org/">EMNLP 2020</a>, 9 at the main conference, 1 at the findings. </li>
+        
+        
+    <li> 
+    Sep 2020. One paper was accepted at <a href="https://coling2020.org/">COLING 2020</a> and one paper was accetped at <a href="http://aacl2020.org/">AACL 2020</a>. </li>
+       
+        
+    <li> 
+    Apr 2020. Two papers were accepted at <a href="https://acl2020.org/">ACL 2020</a> and one paper was accetped at <a href="https://www.ijcai20.org/">IJCAI 2020</a>. </li>
+       
+        
+    <li> 
+    Nov 2019. Four papers were accepted at <a href="https://aaai.org/Conferences/AAAI-20/">AAAI 2020</a>. </li>
+       
+        
+    <li> 
+    Aug 2019. Eight papers were accepted at <a href="https://www.emnlp-ijcnlp2019.org/">EMNLP 2019</a>. </li>
+        
+        
+    <li> 
+    May 2019. One paper was accetped at <a href="https://www.ijcai19.org/">IJCAI 2019</a>. </li>
+                
+    <li> 
+    January 2019, I gave a talk on "Text Generation, Editing and Summarization" at the National University of Singapore, here is <a href="pub/TextGeneration_NUS_2019-Jan-18_v2.pdf">the slides</a>. 
+    </li>
+        
+        
+    <li> 
+    January 2019. One paper was accetped at <a href="https://www2019.thewebconf.org/">WWW 2019</a>. 
+    </li>-->
+
+    </ul>
+  
+
+  <h3 id="Publications">Selected Publications (<a href="./research.html">Full List</a>, 
+    <a href="https://github.com/DAMO-NLP-SG">Group GitHub</a>, 
+    <a href="https://scholar.google.com/citations?user=_oYzrzAAAAAJ&hl=en"> Google Scholar</a>,
+    <a href="http://dblp.uni-trier.de/pers/hd/b/Bing:Lidong"> DBLP</a>) </h3>
+  <ul>
+  
+        <li>
+          <p> <font size="3.5"><b>SeaLLMs -- Large Language Models for Southeast Asia </b>
+      <a href="https://arxiv.org/abs/2312.00738">[paper]</a> 
+      <a href="https://huggingface.co/SeaLLMs/SeaLLM-Chat-13b">[demo]</a>
+      <a href="https://github.com/DAMO-NLP-SG/SeaLLMs">[code]</a>.
+      Xuan-Phi Nguyen, Wenxuan Zhang, Xin Li, Mahani Aljunied, Qingyu Tan, Liying Cheng, Guanzheng Chen, Yue Deng, Sen Yang, Chaoqun Liu, Hang Zhang, Lidong Bing. 
+      <i>Preprint arXiv:2312.00738</i>, 2023.<br/></font>
+     </p>
+        </li>
+  
+  
+        <li>
+          <p> <font size="3.5"><b>Contrastive Chain-of-Thought Prompting </b>
+      <a href="https://arxiv.org/abs/2311.09277">[paper]</a> 
+      <a href="https://github.com/DAMO-NLP-SG/contrastive-cot">[code]</a>.
+      Yew Ken Chia, Guizhen Chen, Luu Anh Tuan, Soujanya Poria, Lidong Bing. 
+      <i>Preprint arXiv:2311.09277</i>, 2023.<br/></font>
+     </p>
+        </li>
+  
+
+  
+        <li>
+          <p> <font size="3.5"><b>Mitigating Object Hallucinations in Large Vision-Language Models through Visual Contrastive Decoding </b>
+      <a href="https://arxiv.org/abs/2311.16922">[paper]</a> 
+      <a href="https://github.com/DAMO-NLP-SG/VCD">[code]</a>.
+      Sicong Leng, Hang Zhang, Guanzheng Chen, Xin Li, Shijian Lu, Chunyan Miao, Lidong Bing. 
+      <i>Preprint arXiv:2311.16922</i>, 2023.<br/></font>
+     </p>
+        </li>
+  
+
+  
+        <li>
+          <p> <font size="3.5"><b>CLEX: Continuous Length Extrapolation for Large Language Models </b>
+      <a href="https://arxiv.org/abs/2310.16450">[paper]</a> 
+      <a href="https://github.com/DAMO-NLP-SG/CLEX">[code]</a>.
+      Guanzheng Chen, Xin Li, Zaiqiao Meng, Shangsong Liang, Lidong Bing. 
+      <i>Preprint arXiv:2310.16450</i>, 2023.<br/></font>
+     </p>
+        </li>
+
+
+  
+        <li>
+          <p> <font size="3.5"><b>Neuro-Symbolic Integration Brings Causal and Reliable Reasoning Proofs </b>
+      <a href="https://arxiv.org/abs/2311.09802">[paper]</a> 
+      <a href="https://github.com/DAMO-NLP-SG/CaRing">[code]</a>.
+      Sen Yang, Xin Li, Leyang Cui, Lidong Bing, Wai Lam. 
+      <i>Preprint arXiv:2311.09802</i>, 2023.<br/></font>
+     </p>
+        </li>
+
+
+  
+        <li>
+          <p> <font size="3.5"><b>Towards Robust Temporal Reasoning of Large Language Models via a Multi-Hop QA Dataset and Pseudo-Instruction Tuning </b>
+      <a href="https://arxiv.org/abs/2311.09821">[paper]</a> 
+      <a href="https://lidongbing.github.io/">[code]</a>.
+      Qingyu Tan, Hwee Tou Ng, Lidong Bing. 
+      <i>Preprint arXiv:2311.09821</i>, 2023.<br/></font>
+     </p>
+        </li>
+  
+        <li>
+          <p> <font size="3.5"><b>Exploring the Potential of Large Language Models in Computational Argumentation </b>
+      <a href="https://arxiv.org/abs/2311.09022">[paper]</a> 
+      <a href="https://github.com/DAMO-NLP-SG/LLM-argumentation">[code]</a>.
+      Guizhen Chen, Liying Cheng, Luu Anh Tuan, Lidong Bing 
+      <i>Preprint arXiv:2311.09022</i>, 2023.<br/></font>
+     </p>
+        </li>
+  
+        <li>
+          <p> <font size="3.5"><b>Semantic-Aware Contrastive Sentence Representation Learning with Large Language Models </b>
+      <a href="https://arxiv.org/abs/2310.10962">[paper]</a> 
+      <a href="https://lidongbing.github.io/">[code]</a>.
+      Huiming Wang, Liying Cheng, Zhaodonghui Li, De Wen Soh, Lidong Bing. 
+      <i>Preprint arXiv:2310.10962</i>, 2023.<br/></font>
+     </p>
+        </li>
+  
+        <li>
+          <p> <font size="3.5"><b>Multilingual Jailbreak Challenges in Large Language Models </b>
+      <a href="https://arxiv.org/abs/2310.06474">[paper]</a> 
+      <a href="https://github.com/DAMO-NLP-SG/multilingual-safety-for-LLMs">[code]</a>.
+      Yue Deng, Wenxuan Zhang, Sinno Jialin Pan, Lidong Bing. 
+      <i>Preprint arXiv:2310.06474</i>, 2023.<br/></font>
+     </p>
+        </li>
+
+  <li>
+          <p> <font size="3.5"><b>Video-LLaMA: An Instruction-tuned Audio-Visual Language Model for Video Understanding </b>
+      <a href="https://arxiv.org/abs/2306.02858">[paper]</a> 
+      <a href="https://github.com/DAMO-NLP-SG/Video-LLaMA">[code]</a>
+      <a href="https://huggingface.co/spaces/DAMO-NLP-SG/Video-LLaMA">[demo (Hugging Face)]</a>
+      <a href="https://www.modelscope.cn/studios/damo/video-llama/summary">[demo (ModelScope)]</a>
+      <a href="https://huggingface.co/DAMO-NLP-SG/Video-LLaMA-Series">[checkpoints]</a>.
+      Hang Zhang, Xin Li, Lidong Bing. 
+      <i>Demo Track of The Conference on Empirical Methods in Natural Language Processing (<b>EMNLP'23 Demo</b>)</i>, 2023.<br/></font>
+     </p>
+        </li>
+
+        <li>
+          <p> <font size="3.5"><b>Once Upon a Time in Graph: Relative-Time Pretraining for Complex Temporal Reasoning </b>
+      <a href="https://lidongbing.github.io/">[paper]</a> <a href="https://lidongbing.github.io/">[code]</a>.
+      Sen Yang, Xin Li, Lidong Bing, Wai Lam.
+      <i>The Conference on Empirical Methods in Natural Language Processing (<b>EMNLP'23</b>)</i>, 2023.<br/></font>
+     </p>
+        </li>
+  
+        <li>
+          <p> <font size="3.5"><b>LLM-Adapters: An Adapter Family for Parameter-Efficient Fine-Tuning of Large Language Models </b>
+      <a href="https://arxiv.org/abs/2304.01933">[paper]</a> <a href="https://github.com/AGI-Edgerunners/LLM-Adapters">[code]</a>.
+      Zhiqiang Hu, Lei Wang, Yihuai Lan, Wanyu Xu, Ee-Peng Lim, Lidong Bing, Xing Xu, Soujanya Poria, Roy Ka-Wei Lee. 
+      <i>The Conference on Empirical Methods in Natural Language Processing (<b>EMNLP'23</b>)</i>, 2023.<br/></font>
+     </p>
+        </li>
+
+  
+
+        <li>
+          <p> <font size="3.5"><b>SOUL: Towards Sentiment and Opinion Understanding of Language </b>
+      <a href="https://lidongbing.github.io/">[paper]</a> <a href="https://lidongbing.github.io/">[code]</a>.
+      Yue Deng, Wenxuan Zhang, Sinno Jialin Pan, Lidong Bing.
+      <i>The Conference on Empirical Methods in Natural Language Processing (<b>EMNLP'23</b>)</i>, 2023.<br/></font>
+     </p>
+        </li>
+
+        <li>
+          <p> <font size="3.5"><b>Is GPT-4 a Good Data Analyst? </b>
+      <a href="https://arxiv.org/abs/2305.15038">[paper]</a> <a href="https://github.com/DAMO-NLP-SG/GPT4-as-DataAnalyst">[code]</a>.
+      Liying Cheng, Xingxuan Li, Lidong Bing. 
+      <i>Findings of The Conference on Empirical Methods in Natural Language Processing (<b>Findings of EMNLP'23</b>)</i>, 2023.<br/></font>
+     </p>
+        </li>
+    
+        <li>
+          <p> <font size="3.5"><b>Large Language Models are Not Yet Human-Level Evaluators for Abstractive Summarization </b>
+      <a href="https://arxiv.org/abs/2305.13091">[paper]</a> <a href="https://github.com/DAMO-NLP-SG/LLM_summeval">[code]</a>.
+      Chenhui Shen, Liying Cheng, Yang You, Xuan-Phi Nguyen, Lidong Bing. 
+      <i>Findings of The Conference on Empirical Methods in Natural Language Processing (<b>Findings of EMNLP'23</b>)</i>, 2023.<br/></font>
+     </p>
+        </li>
+  
+  
+        <li>
+          <p> <font size="3.5"><b>A Hierarchical Encoding-Decoding Scheme for Abstractive Multi-document Summarization </b>
+      <a href="https://arxiv.org/abs/2305.08503">[paper]</a> <a href="https://github.com/DAMO-NLP-SG/HierEncDec">[code]</a>.
+      Chenhui Shen, Liying Cheng, Xuan-Phi Nguyen, Yang You, Lidong Bing. 
+      <i>Findings of The Conference on Empirical Methods in Natural Language Processing (<b>Findings of EMNLP'23</b>)</i>, 2023.<br/></font>
+     </p>
+        </li>
+
+  
+        <li>
+          <p> <font size="3.5"><b>
+      M3Exam: A Multilingual, Multimodal, Multilevel Benchmark for Examining Large Language Models </b>
+      <a href="https://arxiv.org/abs/2306.05179">[paper]</a> 
+      <a href="https://github.com/DAMO-NLP-SG/M3Exam">[code]</a>.
+      Wenxuan Zhang, Sharifah Mahani Aljunied, Chang Gao, Yew Ken Chia, Lidong Bing. 
+      <i>Advances in Neural Information Processing Systems 36 (<b>NeurIPS'23</b>)</i>, 2023.<br/></font>
+     </p>
+        </li>
+
+  
+        <li>
+          <p> <font size="3.5"><b>
+      From Cloze to Comprehension: Retrofitting Pre-trained Masked Language Model to Pre-trained Machine Reader </b>
+      <a href="https://arxiv.org/abs/2212.04755">[paper]</a>
+      <a href="https://github.com/DAMO-NLP-SG/PMR">[code]</a>.
+      Weiwen Xu, Xin Li, Wenxuan Zhang, Meng Zhou, Wai Lam, Luo Si, Lidong Bing. 
+      <i>Advances in Neural Information Processing Systems 36 (<b>NeurIPS'23</b>)</i>, 2023.<br/></font>
+     </p>
+        </li>
+
+  
+        <li>
+          <p> <font size="3.5"><b>Democratizing LLMs for Low-Resource Languages by Leveraging their English Dominant Abilities with Linguistically-Diverse Prompts </b>
+      <a href="https://arxiv.org/abs/2306.11372">[paper]</a> <a href="https://lidongbing.github.io/">[code]</a>.
+      Xuan-Phi Nguyen, Sharifah Mahani Aljunied, Shafiq Joty, Lidong Bing. 
+      <i>Preprint arXiv:2306.11372</i>, 2023.<br/></font>
+     </p>
+        </li>
+  
+  
+        <li>
+          <p> <font size="3.5"><b>INSTRUCTEVAL: Towards Holistic Evaluation of Instruction-Tuned Large Language Models </b>
+      <a href="https://arxiv.org/abs/2306.04757">[paper]</a> <a href="https://github.com/declare-lab/instruct-eval">[code]</a>.
+      Yew Ken Chia, Pengfei Hong, Lidong Bing, Soujanya Poria. 
+      <i>Preprint arXiv:2306.04757</i>, 2023.<br/></font>
+     </p>
+        </li>
+  
+        <li>
+          <p> <font size="3.5"><b>Chain-of-Knowledge: Grounding Large Language Models via Dynamic Knowledge Adapting over Heterogeneous Sources </b>
+      <a href="https://arxiv.org/abs/2305.13269">[paper]</a> <a href="https://github.com/DAMO-NLP-SG/chain-of-knowledge">[code]</a>.
+      Xingxuan Li, Ruochen Zhao, Yew Ken Chia, Bosheng Ding, Shafiq Joty, Soujanya Poria, Lidong Bing. 
+      <i>Preprint arXiv:2305.13269</i>, 2023.<br/></font>
+     </p>
+        </li>
+  
+  
+        <li>
+          <p> <font size="3.5"><b>Unlocking Temporal Question Answering for Large Language Models Using Code Execution </b>
+      <a href="https://arxiv.org/abs/2305.15014">[paper]</a> <a href="https://github.com/DAMO-NLPSG/code-temporal">[code]</a>.
+      Xingxuan Li, Liying Cheng, Qingyu Tan, Hwee Tou Ng, Shafiq Joty, Lidong Bing. 
+      <i>Preprint arXiv:2305.15014</i>, 2023.<br/></font>
+     </p>
+        </li>
+  
+        <li>
+          <p> <font size="3.5"><b>Sentiment Analysis in the Era of Large Language Models: A Reality Check </b>
+      <a href="https://arxiv.org/abs/2305.15005">[paper]</a> <a href="https://github.com/DAMO-NLP-SG/LLM-Sentiment">[code]</a>.
+      Wenxuan Zhang, Yue Deng, Bing Liu, Sinno Jialin Pan, Lidong Bing. 
+      <i>Preprint arXiv:2305.15005</i>, 2023.<br/></font>
+     </p>
+        </li>
+  
+  
+  
+        <li>
+          <p> <font size="3.5"><b>Domain-Expanded ASTE: Rethinking Generalization in Aspect Sentiment Triplet Extraction </b>
+      <a href="https://arxiv.org/abs/2305.14434">[paper]</a> <a href="https://github.com/DAMO-NLP-SG/domain-expanded-aste">[code]</a>.
+      Yew Ken Chia, Hui Chen, Wei Han, Guizhen Chen, Sharifah Mahani Aljunied, Soujanya Poria, Lidong Bing. 
+      <i>Preprint arXiv:2305.14434</i>, 2023.<br/></font>
+     </p>
+        </li>
+  
+  
+        <li>
+          <p> <font size="3.5"><b>Enhancing Few-shot NER with Prompt Ordering based Data Augmentation </b>
+      <a href="https://arxiv.org/abs/2305.11791">[paper]</a> <a href="https://github.com/DAMO-NLP-SG/PODA-NER">[code]</a>.
+      Huiming Wang, Liying Cheng, Wenxuan Zhang, De Wen Soh, Lidong Bing. 
+      <i>Preprint arXiv:2305.11791</i>, 2023.<br/></font>
+     </p>
+        </li>
+  
+  
+        <li>
+          <p> <font size="3.5"><b>Can ChatGPT-like Generative Models Guarantee Factual Accuracy? On the Mistakes of New Generation Search Engines </b>
+      <a href="https://arxiv.org/abs/2304.11076">[paper]</a> [blog article 
+      <a href="https://zhuanlan.zhihu.com/p/605915549"> (ZH)</a>, 
+      <a href="https://dev.to/ruochenzhao3/can-chatgpt-like-generative-models-guarantee-factual-accuracy-on-the-mistakes-of-microsofts-new-bing-111b">(EN)</a>].
+      Ruochen Zhao, Xingxuan Li, Yew Ken Chia, Bosheng Ding, Lidong Bing. <i>Preprint arXiv:2304.11076</i>, 2023.
+       <i>Follow-up reports by <a href="https://www.cnn.com/2023/02/14/tech/microsoft-bing-ai-errors/index.html">CNN</a>, 
+        <a href="https://www.cnbc.com/2023/02/14/microsoft-bing-ai-made-several-errors-in-launch-demo-last-week-.html">CNBC</a>, 
+        <a href="https://fortune.com/2023/02/15/microsoft-bing-ai-errors-demo-google-bard-chatgpt/">FORTUNE, </a></i>etc.<br/></font>
+     </p>
+        </li>
+  
+  
+  
+        <li>
+          <p> <font size="3.5"><b>mPMR: A Multilingual Pre-trained Machine Reader at Scale </b>
+      <a href="https://aclanthology.org/2023.acl-short.131.pdf">[paper]</a> <a href="https://github.com/DAMO-NLP-SG/PMR">[code]</a>.
+      Weiwen Xu, Xin Li, Wai Lam, Lidong Bing. 
+      <i>The 61th Annual Meeting of the Association for Computational Linguistics (ACL'23)</i>, 2023.<br/></font>
+     </p>
+        </li>
+  
+  
+        <li>
+          <p> <font size="3.5"><b>PeerDA: Data Augmentation via Modeling Peer Relation for Span Identification Tasks </b>
+      <a href="https://aclanthology.org/2023.acl-long.484.pdf">[paper]</a> <a href="https://github.com/DAMO-NLP-SG/PeerDA">[code]</a>. 
+      Weiwen Xu, Xin Li, Yang Deng, Lidong Bing, Wai Lam. 
+      <i>The 61th Annual Meeting of the Association for Computational Linguistics (ACL'23)</i>, 2023.<br/></font>
+     </p>
+        </li>
+  
+  
+        <li>
+          <p> <font size="3.5"><b>Information Screening whilst Exploiting! Multimodal Relation Extraction with Feature Denoising and Multimodal Topic Modeling </b>
+      <a href="https://aclanthology.org/2023.acl-long.823.pdf">[paper]</a> <a href="https://github.com/ChocoWu/MRE-ISE">[code]</a>.
+      Shengqiong Wu, Hao Fei, Yixin Cao, Lidong Bing, Tat-Seng Chua. 
+      <i>The 61th Annual Meeting of the Association for Computational Linguistics (ACL'23)</i>, 2023.<br/></font>
+     </p>
+        </li>
+  
+        <li>
+          <p> <font size="3.5"><b>Reasoning Implicit Sentiment with Chain-of-Thought Prompting </b>
+      <a href="https://aclanthology.org/2023.acl-short.101.pdf">[paper]</a> <a href="https://github.com/scofield7419/THOR-ISA">[code]</a>.
+      Hao Fei, Bobo Li, Qian Liu, Lidong Bing, Fei Li, Tat-Seng Chua. 
+      <i>The 61th Annual Meeting of the Association for Computational Linguistics (ACL'23)</i>, 2023.<br/></font>
+     </p>
+        </li>
+  
+  
+        <li>
+          <p> <font size="3.5"><b>Verify-and-Edit: A Knowledge-Enhanced Chain-of-Thought Framework </b>
+      <a href="https://aclanthology.org/2023.acl-long.320.pdf">[paper]</a> <a href="https://github.com/RuochenZhao/Verify-and-Edit">[code]</a>. 
+      Ruochen Zhao, Xingxuan Li, Shafiq Joty, Chengwei Qin, Lidong Bing. 
+      <i>The 61th Annual Meeting of the Association for Computational Linguistics (ACL'23)</i>, 2023.<br/></font>
+     </p>
+        </li>
+  
+  
+        <li>
+          <p> <font size="3.5"><b>Towards Robust Low-Resource Fine-Tuning with Multi-View Compressed Representations </b>
+      <a href="https://aclanthology.org/2023.acl-long.264.pdf">[paper]</a> <a href="https://github.com/DAMO-NLP-SG/MVCR">[code]</a>.
+      Linlin Liu, Xingxuan Li, Megh Thakkar, Xin Li, Shafiq Joty, Luo Si, Lidong Bing. 
+      <i>The 61th Annual Meeting of the Association for Computational Linguistics (ACL'23)</i>, 2023.<br/></font>
+     </p>
+        </li>
+  
+  
+        <li>
+          <p> <font size="3.5"><b>Is GPT-3 a Good Data Annotator? </b>
+      <a href="https://aclanthology.org/2023.acl-long.626.pdf">[paper]</a> <a href="https://github.com/DAMO-NLP-SG/LLM-Data-Annotator">[code]</a>.
+      Bosheng Ding, Chengwei Qin, Linlin Liu, Yew Ken Chia, Boyang Li, Shafiq Joty, Lidong Bing. 
+      <i>The 61th Annual Meeting of the Association for Computational Linguistics (ACL'23)</i>, 2023.<br/></font>
+     </p>
+        </li>
+  
+  
+  
+        <li>
+          <p> <font size="3.5"><b>Improving Self-training for Cross-lingual Named Entity Recognition with Contrastive and Prototype Learning </b>
+      <a href="https://aclanthology.org/2023.acl-long.222.pdf">[paper]</a> <a href="https://github.com/DAMO-NLP-SG/ContProto">[code]</a>.
+      Ran Zhou, Xin Li, Lidong Bing, Erik Cambria, Chunyan Miao. 
+      <i>The 61th Annual Meeting of the Association for Computational Linguistics (ACL'23)</i>, 2023.<br/></font>
+     </p>
+        </li>
+  
+  
+  
+        <li>
+          <p> <font size="3.5"><b>Bidirectional Generative Framework for Cross-domain Aspect-based Sentiment Analysis </b>
+      <a href="https://aclanthology.org/2023.acl-long.686.pdf">[paper]</a> <a href="https://github.com/DAMO-NLP-SG/BGCA">[code]</a>.
+      Yue Deng, Wenxuan Zhang, Sinno Jialin Pan, Lidong Bing. 
+      <i>The 61th Annual Meeting of the Association for Computational Linguistics (ACL'23)</i>, 2023.<br/></font>
+     </p>
+        </li>
+  
+  
+        <li>
+          <p> <font size="3.5"><b>Towards Benchmarking and Improving the Temporal Reasoning Capability of Large Language Models </b>
+      <a href="https://aclanthology.org/2023.acl-long.828.pdf">[paper]</a> <a href="https://github.com/DAMO-NLP-SG/TempReason">[code]</a>.
+      Qingyu Tan, Hwee Tou Ng, Lidong Bing. 
+      <i>The 61th Annual Meeting of the Association for Computational Linguistics (ACL'23)</i>, 2023.<br/></font>
+     </p>
+        </li>
+  
+  
+  
+        <li>
+          <p> <font size="3.5"><b>Class-Adaptive Self-Training for Relation Extraction with Incompletely Annotated Training Data </b>
+      <a href="https://aclanthology.org/2023.findings-acl.549/">[paper]</a> <a href="https://github.com/DAMO-NLP-SG/CAST">[code]</a>.
+      Qingyu Tan, Lu Xu, Lidong Bing, Hwee Tou Ng. 
+      <i>Findings of The 61th Annual Meeting of the Association for Computational Linguistics (Findings of ACL'23)</i>, 2023.<br/></font>
+     </p>
+        </li>
+  
+        <li>
+          <p> <font size="3.5"><b>Easy-to-Hard Learning for Information Extraction </b>
+      <a href="https://aclanthology.org/2023.findings-acl.754.pdf">[paper]</a> <a href="https://github.com/DAMO-NLP-SG/IE-E2H">[code]</a>.
+      Chang Gao, Wenxuan Zhang, Wai Lam, Lidong Bing. 
+      <i>Findings of The 61th Annual Meeting of the Association for Computational Linguistics (Findings of ACL'23)</i>, 2023.<br/></font>
+     </p>
+        </li>
+  
+        <li>
+          <p> <font size="3.5"><b>AQE: Argument Quadruplet Extraction via a Quad-Tagging Augmented Generative Approach </b>
+      <a href="https://aclanthology.org/2023.findings-acl.59.pdf">[paper]</a> <a href="https://github.com/guojiapub/QuadTAG">[code]</a>.
+      Jia Guo, Liying Cheng, Wenxuan Zhang, Stanley Kok, Xin Li, Lidong Bing. 
+      <i>Findings of The 61th Annual Meeting of the Association for Computational Linguistics (Findings of ACL'23)</i>, 2023.<br/></font>
+     </p>
+        </li>
+  
+        <li>
+          <p> <font size="3.5"><b>Sampling Better Negatives for Distantly Supervised Named Entity Recognition </b>
+      <a href="https://aclanthology.org/2023.findings-acl.300.pdf">[paper]</a> <a href="https://github.com/xuuuluuu/ds_ner">[code]</a>.
+      Lu Xu, Lidong Bing, Wei Lu. 
+      <i>Findings of The 61th Annual Meeting of the Association for Computational Linguistics (Findings of ACL'23)</i>, 2023.<br/></font>
+     </p>
+        </li>
+  
+  
+        <li>
+          <p> <font size="3.5"><b>Zero-Shot Text Classification via Self-Supervised Tuning </b>
+      <a href="https://aclanthology.org/2023.findings-acl.110.pdf">[paper]</a> <a href="https://github.com/DAMO-NLP-SG/SSTuning">[code]</a>.
+      Chaoqun Liu, Wenxuan Zhang, Guizhen Chen, Xiaobao Wu, Anh Tuan Luu, Chip Hong Chang, Lidong Bing. 
+      <i>Findings of The 61th Annual Meeting of the Association for Computational Linguistics (Findings of ACL'23)</i>, 2023.<br/></font>
+     </p>
+        </li>
+  
+  
+        <li>
+          <p> <font size="3.5"><b>Gradient-Boosted Decision Tree for Listwise Context Model in Multimodal Review Helpfulness Prediction </b>
+      <a href="https://aclanthology.org/2023.findings-acl.106.pdf">[paper]</a>.
+      Thong Thanh Nguyen, Xiaobao Wu, Xinshuai Dong, Cong-Duy T. Nguyen, Zhen Hai, Lidong Bing, Anh Tuan Luu. 
+      <i>Findings of The 61th Annual Meeting of the Association for Computational Linguistics (Findings of ACL'23)</i>, 2023.<br/></font>
+     </p>
+        </li>
+  
+        <li>
+          <p> <font size="3.5"><b>Enhancing Cross-lingual Prompting with Dual Prompt Augmentation </b>
+      <a href="https://aclanthology.org/2023.findings-acl.700.pdf">[paper]</a> <a href="https://github.com/DAMO-NLP-SG/DPA">[code]</a>. 
+      Meng Zhou, Xin Li, Yue Jiang, Lidong Bing. 
+      <i>Findings of The 61th Annual Meeting of the Association for Computational Linguistics (Findings of ACL'23)</i>, 2023.<br/></font>
+     </p>
+        </li>
+  
+
+    
+        <li>
+          <p> <font size="3.5"><b>On the Effectiveness of Parameter-Efficient Fine-Tuning </b>
+      <a href="https://arxiv.org/abs/2211.15583">[paper]</a> <a href="https://github.com/fuzihaofzh/AnalyzeParameterEfficientFinetune">[code]</a>. 
+      Zihao Fu, Haoran Yang, Anthony Man-Cho So, Wai Lam, Lidong Bing, Nigel Collier.
+      <i>The AAAI Conference on Artificial Intelligence (<b>AAAI'23</b>)</i>, 2023.<br/></font>
+     </p>
+        </li>
+  
+  
+  
+    
+        <li>
+          <p> <font size="3.5"><b>Towards Integration of Discriminability and Robustness for Document-Level Relation Extraction </b>
+      <a href="https://arxiv.org/abs/2304.00824">[paper]</a> <a href="https://github.com/guojiapub/PEMSCL">[code]</a>. 
+      Jia Guo, Stanley Kok, Lidong Bing.
+      <i>The 17th Annual Meeting of the European chapter of the Association for Computational Linguistics (<b>EACL'23</b>)</i>, 2023.<br/></font>
+     </p>
+        </li>
+  
+  
+  
+  
+  
+        <li>
+          <p> <font size="3.5"><b>A Survey on Aspect-Based Sentiment Analysis: Tasks, Methods, and Challenges </b>
+      <a href="https://arxiv.org/abs/2203.01054">[paper]</a> <a href="https://github.com/IsakZhang/ABSA-Survey">[resources]</a>. 
+      Wenxuan Zhang, Xin Li, Yang Deng, Lidong Bing, Wai Lam.
+      <i>IEEE Transactions on Knowledge and Data Engineering (TKDE)</i>, Dec 2022.<br/></font>
+     </p>
+        </li>
+  
+  
+  
+        <li>
+          <p> <font size="3.5"><b>Is GPT-3 a Psychopath? Evaluating Large Language Models from a Psychological Perspective </b>
+      <a href="https://arxiv.org/abs/2212.10529">[paper]</a>.
+      Xingxuan Li, Yutong Li, Linlin Liu, Shafiq Joty, Lidong Bing. 
+      <i>Preprint arXiv:2212.10529</i>, 2022.<br/></font>
+     </p>
+        </li>
+  
+
+  
+        <li>
+          <p> <font size="3.5">
+      <b>Retrofitting Multilingual Sentence Embeddings with Abstract Meaning Representation </b>
+      <a href="https://aclanthology.org/2022.emnlp-main.433/">[paper]</a> <a href="https://github.com/jcyk/MSE-AMR">[code & data]</a>. 
+      Deng Cai, Xin Li, Jackie Chun-Sing Ho, Lidong Bing, Wai Lam.
+      <i>The Conference on Empirical Methods in Natural Language Processing (<b>EMNLP'22</b>)</i>, 2022.<br/></font>
+     </p>
+        </li>
+
+  
+        <li>
+          <p> <font size="3.5">
+      <b>A Dataset for Hyper-Relational Extraction and a Cube-Filling Approach </b>
+      <a href="https://aclanthology.org/2022.emnlp-main.688/">[paper]</a> <a href="https://github.com/declare-lab/HyperRED">[code & data]</a>. 
+      Yew Ken Chia, Lidong Bing, Sharifah Mahani Aljunied, Luo Si, Soujanya Poria.
+      <i>The Conference on Empirical Methods in Natural Language Processing (<b>EMNLP'22</b>)</i>, 2022.<br/></font>
+     </p>
+        </li>
+
+  
+        <li>
+          <p> <font size="3.5">
+      <b>Enhancing Multilingual Language Model with Massive Multilingual Knowledge Triples </b>
+      <a href="https://aclanthology.org/2022.emnlp-main.462/">[paper]</a> <a href="https://github.com/ntunlp/kmlm">[code & data]</a>. 
+      Linlin Liu, Xin Li, Ruidan He, Lidong Bing, Shafiq Jotym, Luo Si.
+      <i>The Conference on Empirical Methods in Natural Language Processing (<b>EMNLP'22</b>)</i>, 2022.<br/></font>
+     </p>
+        </li>
+
+  
+        <li>
+          <p> <font size="3.5">
+      <b>Adaptive Contrastive Learning on Multimodal Transformer for Review Helpfulness Predictions </b>
+      <a href="https://aclanthology.org/2022.emnlp-main.686/">[paper]</a> <a href="https://github.com/jhliu17/MCR">[data]</a>. 
+      Thong Nguyen, Xiaobao Wu, Anh Tuan Luu, Cong-Duy Nguyen, Zhen Hai, Lidong Bing.
+      <i>The Conference on Empirical Methods in Natural Language Processing (<b>EMNLP'22</b>)</i>, 2022.<br/></font>
+     </p>
+        </li>
+
+  
+        <li>
+          <p> <font size="3.5">
+      <b>SentBS: Sentence-level Beam Search for Controllable Summarization </b>
+      <a href="https://aclanthology.org/2022.emnlp-main.699/">[paper]</a> <a href="https://github.com/Shen-Chenhui/SentBS">[code & data]</a>. 
+      Chenhui Shen, Liying Cheng, Lidong Bing, Yang You, Luo Si.
+      <i>The Conference on Empirical Methods in Natural Language Processing (<b>EMNLP'22</b>)</i>, 2022.<br/></font>
+     </p>
+        </li>
+  
+  
+        <li>
+          <p> <font size="3.5">
+      <b>Revisiting DocRED – Addressing the False Negative Problem in Relation Extraction </b>
+      <a href="https://aclanthology.org/2022.emnlp-main.580/">[paper]</a> <a href="https://github.com/tonytan48/Re-DocRED">[code & data]</a>. 
+      Qingyu Tan, Lu Xu, Lidong Bing, Hwee Tou Ng, Sharifah Mahani Aljunied.
+      <i>The Conference on Empirical Methods in Natural Language Processing (<b>EMNLP'22</b>)</i>, 2022.<br/></font>
+     </p>
+        </li>
+  
+        <li>
+          <p> <font size="3.5">
+      <b>Interventional Training for Out-Of-Distribution Natural Language Understanding</b>
+      <a href="https://aclanthology.org/2022.emnlp-main.799/">[paper]</a> <a href="https://github.com/PluviophileYU/BAI">[code & data]</a>. 
+      Sicheng Yu, Jing Jiang, Hao Zhang, Yulei Niu, Qianru Sun, Lidong Bing.
+      <i>The Conference on Empirical Methods in Natural Language Processing (<b>EMNLP'22</b>)</i>, 2022.<br/></font>
+     </p>
+        </li>
+
+  
+        <li>
+          <p> <font size="3.5">
+      <b>ConNER: Consistency Training for Cross-lingual Named Entity Recognition </b>
+      <a href="https://aclanthology.org/2022.emnlp-main.577/">[paper]</a> <a href="https://github.com/RandyZhouRan/ConNER">[code & data]</a>. 
+      Ran Zhou, Xin Li, Lidong Bing, Erik Cambria, Luo Si, Chunyan Miao.
+      <i>The Conference on Empirical Methods in Natural Language Processing (<b>EMNLP'22</b>)</i>, 2022.<br/></font>
+     </p>
+        </li>
+  
+  
+        <li>
+          <p> <font size="3.5"><b>SANCL: Multimodal Review Helpfulness Prediction with Selective Attention and Natural Contrastive Learning </b>
+      <a href="https://aclanthology.org/2022.coling-1.499/">[paper]</a>
+      <a href="https://github.com/declare-lab/SANCL">[code & data]</a>. 
+      Wei Han, Hui Chen, Zhen Hai, Soujanya Poria, Lidong Bing. 
+      <i>The 29th International Conference on Computational Linguistics (<b>COLING'22</b>)</i>, 2022.<br/></font>
+     </p>
+        </li>
+  
+  
+  
+        <li>
+          <p> <font size="3.5"><b>Towards Multi-Sense Cross-Lingual Alignment of Contextual Embeddings </b>
+      <a href="https://aclanthology.org/2022.coling-1.386/">[paper]</a> 
+      <a href="https://github.com/ntunlp/multisense_embedding_alignment">[code & data]</a>. 
+      Linlin Liu, Thien Hai Nguyen, Shafiq Joty, Lidong Bing, Luo Si. 
+      <i>The 29th International Conference on Computational Linguistics (<b>COLING'22</b>)</i>, 2022.<br/></font>
+     </p>
+        </li>
+  
+  
+        <li>
+          <p> <font size="3.5"><b>Domain Generalization for Text Classification with Memory-Based Supervised Contrastive Learning </b>
+      <a href="https://aclanthology.org/2022.coling-1.602/">[paper]</a> 
+      <a href="https://github.com/tonytan48/MSCL">[code & data]</a>. 
+      Qingyu Tan, Ruidan He, Hwee Tou Ng, Lidong Bing. 
+      <i>The 29th International Conference on Computational Linguistics (<b>COLING'22</b>)</i>, 2022.<br/></font>
+     </p>
+        </li>
+  
+        <li>
+          <p> <font size="3.5">
+      <b>IAM: A Comprehensive and Large-Scale Dataset for Integrated Argument Mining Tasks </b>
+      <a href="https://aclanthology.org/2022.acl-long.162/">[paper]</a> <a href="https://github.com/LiyingCheng95/IAM">[code & data]</a>. 
+      Liying Cheng, Lidong Bing, Ruidan He, Qian Yu, Yan Zhang, Luo Si.
+      <i>The 60th Annual Meeting of the Association for Computational
+        Linguistics (<b>ACL'22</b>)</i>, 2022.<br/></font>
+     </p>
+        </li>
+  
+        <li>
+          <p> <font size="3.5">
+      <b>GlobalWoZ: Globalizing MultiWoZ to Develop Multilingual Task-Oriented Dialogue Systems </b>
+      <a href="https://aclanthology.org/2022.acl-long.115/">[paper]</a> <a href="https://ntunlpsg.github.io/project/globalwoz/">[code & data]</a>. 
+      Bosheng Ding, Junjie Hu, Lidong Bing, Sharifah Mahani Aljunied, Shafiq Joty, Luo Si, Chunyan Miao.
+      <i>The 60th Annual Meeting of the Association for Computational
+        Linguistics (<b>ACL'22</b>)</i>, 2022.<br/></font>
+     </p>
+        </li>
+  
+        <li>
+          <p> <font size="3.5">
+      <b>MELM: Data Augmentation with Masked Entity Language Modeling for Low-Resource NER </b>
+      <a href="https://aclanthology.org/2022.acl-long.160/">[paper]</a> <a href="https://github.com/RandyZhouRan/MELM/">[code & data]</a>. 
+      Ran Zhou, Xin Li, Ruidan He, Lidong Bing, Erik Cambria, Luo Si, Chunyan Miao.
+      <i>The 60th Annual Meeting of the Association for Computational
+        Linguistics (<b>ACL'22</b>)</i>, 2022.<br/></font>
+     </p>
+        </li>
+  
+        <li>
+          <p> <font size="3.5">
+      <b>RelationPrompt: Leveraging Prompts to Generate Synthetic Data for Zero-Shot Relation Triplet Extraction </b>
+      <a href="https://aclanthology.org/2022.findings-acl.5/">[paper]</a> <a href="https://github.com/declare-lab/RelationPrompt">[code & data]</a>. 
+      Yew Ken Chia, Lidong Bing, Soujanya Poria, Luo Si.
+      <i>Findings of The 60th Annual Meeting of the Association for Computational
+        Linguistics (<b>Findings of ACL'22</b>)</i>, 2022.<br/></font>
+     </p>
+        </li>
+  
+        <li>
+          <p> <font size="3.5">
+      <b>MReD: A Meta-Review Dataset for Structure-Controllable Text Generation </b>
+      <a href="https://aclanthology.org/2022.findings-acl.198/">[paper]</a> <a href="https://github.com/Shen-Chenhui/MReD">[code & data]</a>. 
+      Chenhui Shen, Liying Cheng, Ran Zhou, Lidong Bing, Yang You, Luo Si.
+      <i>Findings of The 60th Annual Meeting of the Association for Computational
+        Linguistics (<b>Findings of ACL'22</b>)</i>, 2022.<br/></font>
+     </p>
+        </li>
+  
+        <li>
+          <p> <font size="3.5">
+      <b>Document-Level Relation Extraction with Adaptive Focal Loss and Knowledge Distillation </b>
+      <a href="https://aclanthology.org/2022.findings-acl.132/">[paper]</a> <a href="https://github.com/tonytan48/KD-DocRE">[code & data]</a>. 
+      Qingyu Tan, Ruidan He, Lidong Bing, Hwee Tou Ng.
+      <i>Findings of The 60th Annual Meeting of the Association for Computational
+        Linguistics (<b>Findings of ACL'22</b>)</i>, 2022.<br/></font>
+     </p>
+        </li>
+
+  
+  
+        <li>
+          <p> <font size="3.5"><b>Informative Text Generation from Knowledge Triples </b>
+      <a href="https://arxiv.org/abs/2209.12733">[paper]</a>. 
+      Zihao Fu, Yijiang River Dong, Lidong Bing, Wai Lam. 
+      <i>Preprint arXiv:2209.12733</i>, 2022.<br/></font>
+     </p>
+        </li>
+  
+        <li>
+          <p> <font size="3.5">
+      <b>Cross-lingual Aspect-based Sentiment Analysis with Aspect Term Code-Switching </b>
+      <a href="https://aclanthology.org/2021.emnlp-main.727/">[paper]</a> <a href="https://github.com/isakzhang/xabsa">[code & data]</a>. 
+      Wenxuan Zhang, Ruidan He, Haiyun Peng, Lidong Bing, Wai Lam.
+      <i>The Conference on Empirical Methods in Natural Language Processing (<b>EMNLP'21</b>)</i>, 2021.<br/></font>
+     </p>
+        </li>
+  
+        <li>
+          <p> <font size="3.5">
+      <b>Aspect Sentiment Quad Prediction as Paraphrase Generation </b>
+      <a href="https://aclanthology.org/2021.emnlp-main.726/">[paper]</a> <a href="https://github.com/isakzhang/absa-quad">[code & data]</a>. 
+      Wenxuan Zhang, Yang Deng, Xin Li, Yifei Yuan, Lidong Bing, Wai Lam.
+      <i>The Conference on Empirical Methods in Natural Language Processing (<b>EMNLP'21</b>)</i>, 2021.<br/></font>
+     </p>
+        </li>
+  
+  
+  
+        <li>
+          <p> <font size="3.5">
+      <b>Multilingual AMR Parsing with Noisy Knowledge Distillation </b>
+      <a href="https://aclanthology.org/2021.findings-emnlp.237/">[paper]</a> <a href="https://github.com/jcyk/XAMR">[code & data]</a>. 
+      Deng Cai, Xin Li, Jackie Chun-Sing Ho, Lidong Bing, Wai Lam.
+      <i>Findings of The Conference on Empirical Methods in Natural Language Processing (<b>Findings of EMNLP'21</b>)</i>, 2021.<br/></font>
+     </p>
+        </li>
+
+  
+        <li>
+          <p> <font size="3.5">
+      <b>Aspect-based Sentiment Analysis in Question Answering Forums </b>
+      <a href="https://aclanthology.org/2021.findings-emnlp.390/">[paper]</a> <a href="https://github.com/isakzhang/absa-qa">[code]</a>. 
+      Wenxuan Zhang, Yang Deng, Xin Li, Lidong Bing, Wai Lam.
+      <i>Findings of The Conference on Empirical Methods in Natural Language Processing (<b>Findings of EMNLP'21</b>)</i>, 2021.<br/></font>
+     </p>
+        </li>
+  
+        <li>
+          <p> <font size="3.5">
+      <b>Argument Pair Extraction via Attention-guided Multi-Layer Multi-Cross Encoding </b>
+      <a href="https://aclanthology.org/2021.acl-long.496/">[paper]</a> 
+      <a href="https://github.com/TianyuTerry/MLMC">[code & data]</a>. 
+      Liying Cheng,  Tianyu Wu, Lidong Bing, Luo Si.
+      <i>The 59th Annual Meeting of the Association for Computational 
+        Linguistics (<b>ACL'21</b>)</i>, 2021.<br/></font>
+     </p>
+        </li>
+
+    
+  
+        <li>
+          <p> <font size="3.5">
+      <b>On the Effectiveness of Adapter-based Tuning for Pretrained Language Model Adaptation </b>
+      <a href="https://aclanthology.org/2021.acl-long.172/">[paper]</a>. Ruidan He, Linlin Liu, Hai Ye, Qingyu Tan, Bosheng Ding, Liying Cheng, Jiawei Low, Lidong Bing, Luo Si.
+      <i>The 59th Annual Meeting of the Association for Computational 
+        Linguistics (<b>ACL'21</b>)</i>, 2021.<br/></font>
+     </p>
+        </li>
+
+    
+  
+        <li>
+          <p> <font size="3.5">
+      <b>MulDA: A Multilingual Data Augmentation Framework for Low-Resource Cross-Lingual NER </b>
+      <a href="https://aclanthology.org/2021.acl-long.453/">[paper]</a> 
+      <a href="https://github.com/ntunlp/mulda">[code & data]</a>
+      . Linlin Liu, Bosheng Ding, Lidong Bing, Shafiq Joty, Luo Si, Chunyan Miao.
+      <i>The 59th Annual Meeting of the Association for Computational 
+        Linguistics (<b>ACL'21</b>)</i>, 2021.<br/></font>
+     </p>
+        </li>
+
+    
+  
+        <li>
+          <p> <font size="3.5">
+      <b>Multi-perspective Coherent Reasoning for Helpfulness Prediction of Multimodal Reviews </b>
+      <a href="https://aclanthology.org/2021.acl-long.461/">[paper]</a> 
+      <a href="https://github.com/jhliu17/MCR">[code & data]</a>. 
+      Junhao Liu, Zhen Hai,  Min Yang, Lidong Bing.
+      <i>The 59th Annual Meeting of the Association for Computational 
+        Linguistics (<b>ACL'21</b>)</i>, 2021.<br/></font>
+     </p>
+        </li>
+
+  
+    
+  
+        <li>
+          <p> <font size="3.5">
+      <b>Learning Span-Level Interactions for Aspect Sentiment Triplet Extraction </b>
+      <a href="https://aclanthology.org/2021.acl-long.367/">[paper]</a> 
+      <a href="https://github.com/chiayewken/Span-ASTE">[code & data]</a>. 
+       Lu Xu, Yew Ken Chia, Lidong Bing.
+      <i>The 59th Annual Meeting of the Association for Computational 
+        Linguistics (<b>ACL'21</b>)</i>, 2021.<br/></font>
+     </p>
+        </li>
+
+      
+  
+        <li>
+          <p> <font size="3.5">
+      <b>Bootstrapped Unsupervised Sentence Representation Learning </b>
+      <a href="https://aclanthology.org/2021.acl-long.402/">[paper]</a> 
+      <a href="https://github.com/yanzhangnlp/BSL">[code & data]</a>. 
+       Yan Zhang, Ruidan He, Zouzhu Liu, Lidong Bing, Haizhou Li.
+      <i>The 59th Annual Meeting of the Association for Computational 
+        Linguistics (<b>ACL'21</b>)</i>, 2021.<br/></font>
+     </p>
+        </li>
+  
+  
+  
+        <li>
+          <p> <font size="3.5">
+      <b>Towards Generative Aspect-Based Sentiment Analysis </b>
+      <a href="https://aclanthology.org/2021.acl-short.64/">[paper]</a> 
+      <a href="https://github.com/IsakZhang/Generative-ABSA">[code & data]</a>. 
+       Wenxuan Zhang, Xin  Li, Yang Deng, Lidong Bing, Wai Lam.
+      <i>The 59th Annual Meeting of the Association for Computational 
+        Linguistics (<b>ACL'21</b>)</i>, 2021.<br/></font>
+     </p>
+        </li>
+
+  
+
+        <li>
+          <p> <font size="3.5"><b>Better Feature Integration for Named Entity Recognition </b>
+      <a href="https://aclanthology.org/2021.naacl-main.271/">[paper]</a> 
+      <a href="https://github.com/xuuuluuu/SynLSTM-for-NER">[code & data]</a>. 
+       Lu Xu, Zhanming Jie, Wei Lu, Lidong Bing. 
+      <i>Annual Conference of the North American Chapter of the Association for Computational Linguistics (<b>NAACL'21</b>)</i>, 2021.<br/></font>
+     </p>
+        </li>
+
+  
+    
+        <li>
+          <p> <font size="3.5"><b>Exploring Auxiliary Reasoning Tasks for Task-oriented Dialog Systems with Meta Cooperative Learning </b>
+      <a href="https://ojs.aaai.org/index.php/AAAI/article/view/17615">[paper]</a>. 
+      Bowen Qin, Min Yang, Lidong Bing, Qingshan Jiang, Chengming Li, Ruifeng Xu.
+      <i>The AAAI Conference on Artificial Intelligence (<b>AAAI'21</b>)</i>, 2021.<br/></font>
+     </p>
+        </li>
+  
+  
+  
+  
+        <li>
+          <p> <font size="3.5"><b>Harvest Shopping Advice: Neural Question Generation from Multiple Information Sources in E-commerce </b>
+      <a href="https://www.sciencedirect.com/science/article/abs/pii/S0925231220318944">[paper]</a>. Yongzhen Wang, Kaisong Song, Lidong Bing, and Xiaozhong Liu. 
+      <i>Neurocomputing</i>, 2021.<br/></font>
+     </p>
+        </li>
+  
+  
+  
+        <li>
+          <p> <font size="3.5"><b>Affect Recognition for Multimodal Natural Language Processing </b>
+      <a href="https://dl.acm.org/doi/10.1145/3404970/">[paper]</a>. Soujanya Poria, Ong Yew Soon, Bing Liu, Lidong Bing. 
+      <i>Cognitive Computation</i>, 2021.<br/></font>
+     </p>
+        </li>
+  
+  
+  
+        <li>
+          <p> <font size="3.5"><b>Overview of Argumentative Text Understanding for AI Debater Challenge </b>
+      <a href="https://dl.acm.org/doi/abs/10.1007/978-3-030-88483-3_45">[paper]</a>
+      Jian Yuan, Liying Cheng, Ruidan He, Yinzi Li, Lidong Bing, Zhongyu Wei, Qin Liu, Chenhui Shen, Shuonan Zhang, Changlong Sun, Luo Si, Changjian Jiang, Xuanjing Huang. 
+      <i>Natural Language Processing and Chinese Computing: 10th CCF International Conference, NLPCC</i>, 2021.<br/></font>
+     </p>
+        </li>
+  
+  
+  
+        <li>
+          <p> <font size="3.5">
+      <b>APE: Argument Pair Extraction from Peer Review and Rebuttal via Multi-task Learning </b>
+      <a href="https://aclanthology.org/2020.emnlp-main.569/">[paper]</a>
+      <a href="https://github.com/LiyingCheng95/ArgumentPairExtraction">[code & data]</a>. 
+      Liying Cheng, Lidong Bing, Qian Yu, Wei Lu, Luo Si.
+      <i>The Conference on Empirical Methods in Natural Language Processing (<b>EMNLP'20</b>)</i>, 2020.<br/></font>
+     </p>
+        </li>
+
+  
+  
+        <li>
+          <p> <font size="3.5">
+      <b>ENT-DESC: Entity Description Generation by Exploring Knowledge Graph </b>
+      <a href="https://aclanthology.org/2020.emnlp-main.90/">[paper]</a>
+      <a href="https://github.com/LiyingCheng95/EntityDescriptionGeneration">[code & data]</a>.
+      Liying Cheng, Dekun Wu, Lidong Bing, Yan Zhang, Zhanming Jie, Wei Lu, Luo Si.
+      <i>The Conference on Empirical Methods in Natural Language Processing (<b>EMNLP'20</b>)</i>, 2020.<br/></font>
+     </p>
+        </li>
+
+    
+        <li>
+          <p> <font size="3.5">
+      <b>DAGA: Data Augmentation with a Generation Approach for Low-resource Tagging Tasks </b>
+      <a href="https://aclanthology.org/2020.emnlp-main.488/">[paper]</a>
+      <a href="https://github.com/ntunlp/daga">[code & data]</a>.
+       Bosheng Ding, Linlin Liu, Lidong Bing, Canasai Kruengkrai, Thien Hai Nguyen, Shafiq Joty, Luo Si, Chunyan Miao. 
+      <i>The Conference on Empirical Methods in Natural Language Processing (<b>EMNLP'20</b>)</i>, 2020.<br/></font>
+     </p>
+        </li>
+
+  
+  
+        <li>
+          <p> <font size="3.5">
+      <b>Partially-Aligned Data-to-Text Generation with Distant Supervision </b>
+      <a href="https://aclanthology.org/2020.emnlp-main.738/">[paper]</a>. Zihao Fu, Bei Shi, Wai Lam, Lidong Bing, Zhiyuan Liu.
+      <i>The Conference on Empirical Methods in Natural Language Processing (<b>EMNLP'20</b>)</i>, 2020.<br/></font>
+     </p>
+        </li>
+  
+        <li>
+          <p> <font size="3.5">
+      <b>Aspect Sentiment Classification with Aspect-Specific Opinion Spans </b>
+      <a href="https://aclanthology.org/2020.emnlp-main.288/">[paper]</a>. Lu Xu, Lidong Bing, Wei Lu, Fei Huang.
+      <i>The Conference on Empirical Methods in Natural Language Processing (<b>EMNLP'20</b>)</i>, 2020.<br/></font>
+     </p>
+        </li>
+
+  
+  
+        <li>
+          <p> <font size="3.5">
+      <b>Position-Aware Tagging for Aspect Sentiment Triplet Extraction </b>
+      <a href="https://aclanthology.org/2020.emnlp-main.183/">[paper]</a>
+      <a href="https://github.com/xuuuluuu/Position-Aware-Tagging-for-ASTE">[code & data]</a>.
+       Lu Xu, Hao Li, Wei Lu, Lidong Bing.
+      <i>The Conference on Empirical Methods in Natural Language Processing (<b>EMNLP'20</b>)</i>, 2020.<br/></font>
+     </p>
+        </li>
+
+  
+  
+        <li>
+          <p> <font size="3.5">
+      <b>Feature Adaptation of Pre-Trained Language Models across Languages and Domains with Robust Self-Training </b>
+      <a href="https://aclanthology.org/2020.emnlp-main.599/">[paper]</a>
+      <a href="https://github.com/oceanypt/CFd">[code & data]</a>.
+        Hai Ye, Qingyu Tan, Ruidan He, Juntao Li, Hwee Tou Ng, Lidong Bing.
+      <i>The Conference on Empirical Methods in Natural Language Processing (<b>EMNLP'20</b>)</i>, 2020.<br/></font>
+     </p>
+        </li>
+
+  
+  
+        <li>
+          <p> <font size="3.5">
+      <b>Lightweight, Dynamic Graph Convolutional Networks for AMR-to-Text Generation </b>
+      <a href="https://aclanthology.org/2020.emnlp-main.169/">[paper]</a>
+      <a href="https://github.com/yanzhangnlp/LDGCNs">[code & data]</a>.
+        Yan Zhang, Zhijiang Guo, Zhiyang Teng, Wei Lu, Shay B. Cohen, Zuozhu Liu, Lidong Bing*.
+      <i>The Conference on Empirical Methods in Natural Language Processing (<b>EMNLP'20</b>)</i>, 2020. (*: corresponding author)<br/></font>
+     </p>
+        </li>
+
+  
+  
+        <li>
+          <p> <font size="3.5">
+      <b>An Unsupervised Sentence Embedding Method by Mutual Information Maximization </b>
+      <a href="https://aclanthology.org/2020.emnlp-main.124/">[paper]</a>
+      <a href="https://github.com/yanzhangnlp/IS-BERT">[code & data]</a>.
+        Yan Zhang, Ruidan He, Zuozhu Liu, Kwan Hui Lim, Lidong Bing.
+      <i>The Conference on Empirical Methods in Natural Language Processing (<b>EMNLP'20</b>)</i>, 2020.<br/></font>
+     </p>
+        </li>
+  
+  
+  
+  
+        <li>
+          <p> <font size="3.5">
+      <b>Dynamic Topic Tracker for KB-to-Text Generation </b>
+      <a href="https://aclanthology.org/2020.coling-main.215/">[paper]</a>. Zihao Fu, Lidong Bing, Wai Lam, Shoaib Jameel.
+      <i> The 28th International Conference on Computational Linguistics (<b>COLING'20</b>)</i>, 2020.<br/></font>
+     </p>
+        </li>
+
+  
+  
+        <li>
+          <p> <font size="3.5">
+      <b>Unsupervised KB-to-Text Generation with Auxiliary Triple Extraction using Dual Learning </b>
+      <a href="https://aclanthology.org/2020.aacl-main.29/">[paper]</a>. Zihao Fu, Bei Shi, Lidong Bing, Wai Lam.
+      <i> The 1st Conference of the Asia-Pacific Chapter of the Association for Computational Linguistics and the 10th International Joint Conference on Natural Language Processing (<b>AACL-IJCNLP'20</b>)</i>, 2020.<br/></font>
+     </p>
+        </li>
+
+  
+  
+  
+        <li>
+          <p> <font size="3.5"><b>Unsupervised Domain Adaptation of a Pretrained Cross-Lingual Language Model </b>
+      <a href="https://www.ijcai.org/proceedings/2020/0508.pdf">[paper]</a>
+      <a href="https://github.com/lijuntaopku/UFD">[code & data]</a>.
+         Juntao Li, Ruidan He, Hai Ye, Hwee Tou Ng, Lidong Bing, Rui Yan. 
+      <i>The 29th International Joint Conference on Artificial Intelligence and the 17th Pacific Rim International Conference on Artificial Intelligence (<b>IJCAI-PRICAI'20</b>)</i>, 2020.<br/></font>
+     </p>
+        </li>
+  
+  
+        <li>
+          <p> <font size="3.5"> <b> Review-based Question Generation with Adaptive Instance Transfer and Augmentation </b>
+      <a href="https://aclanthology.org/2020.acl-main.26/">[paper]</a>. Qian Yu, Lidong Bing, Qiong Zhang, Wai Lam, Luo Si.
+      <i>The 58th Annual Meeting of the Association for Computational Linguistics (<b>ACL'20</b>)</i>, 2020.<br/></font>
+     </p>
+        </li>
+  
+  
+  
+        <li>
+          <p> <font size="3.5"> <b>Improving Low-Resource Named Entity Recognition using Joint Sentence and Token Labeling </b>
+      <a href="https://aclanthology.org/2020.acl-main.523/">[paper]</a>. Canasai Kruengkrai, Thien Hai Nguyen, Sharifah Mahani Aljunied, Lidong Bing.
+      <i>The 58th Annual Meeting of the Association for Computational Linguistics (<b>ACL'20</b>)</i>, 2020.<br/></font>
+     </p>
+        </li>
+  
+  
+        <li>
+          <p> <font size="3.5"><b>Knowing What, How and Why: A Near Complete Solution for Aspect-based Sentiment Analysis </b>
+      <a href="https://ojs.aaai.org//index.php/AAAI/article/view/6383">[paper]</a> 
+      <a href="https://github.com/xuuuluuu/SemEval-Triplet-data">[data]</a>. 
+      Haiyun Peng, Lu Xu, Lidong Bing, Wei Lu, Fei Huang, Luo Si. 
+      <i>The Thirty-Fourth AAAI Conference on Artificial Intelligence (<b>AAAI'20</b>)</i>, 2020.<br/></font>
+     </p>
+        </li>
+  
+  
+  
+        <li>
+          <p> <font size="3.5"><b> Open Domain Event Text Generation </b>
+      <a href="https://www.aaai.org/Papers/AAAI/2020GB/AAAI-FuZ.8347.pdf">[paper]</a>. Zihao Fu, Lidong Bing, Wai Lam. 
+      <i>The Thirty-Fourth AAAI Conference on Artificial Intelligence (<b>AAAI'20</b>)</i>, 2020.<br/></font>
+     </p>
+        </li>
+  
+  
+        <li>
+          <p> <font size="3.5"><b>Cross-Lingual Low-Resource Set-to-Description Retrieval for Global E-Commerce </b>
+      <a href="https://arxiv.org/abs/2005.08188">[paper]</a>. Juntao Li, Chang Liu, Lidong Bing, Xiaozhong Liu, Hongsong Li, Jian Wang, Dongyan Zhao, Rui Yan. 
+      <i>The Thirty-Fourth AAAI Conference on Artificial Intelligence (<b>AAAI'20</b>)</i>, 2020.<br/></font>
+     </p>
+        </li>
+  
+  
+        <li>
+          <p> <font size="3.5"><b>GRET: Global Representation Enhanced Transformer </b>
+      <a href="https://arxiv.org/abs/2002.10101">[paper]</a>. Rongxiang Wen, Haoran Wei, Shujian Huang, Heng Yu, Lidong Bing, Weihua Luo, Jiajun Chen. 
+      <i>The Thirty-Fourth AAAI Conference on Artificial Intelligence (<b>AAAI'20</b>)</i>, 2020.<br/></font>
+     </p>
+        </li>
+  
+
+  
+  
+        <li>
+          <p> <font size="3.5"><b>FOX: Fast Overlapping Community Detection Algorithm in Big Weighted Networks </b>
+      <a href="https://dl.acm.org/doi/10.1145/3404970/">[paper]</a>. Tianshu Lyu, Lidong Bing, Zhao Zhang, and Yan Zhang. 
+      <i>ACM Transactions on Social Computing</i>, 2020.<br/></font>
+     </p>
+        </li>
+  
+  
+  
+  
+        <li>
+          <p> <font size="3.5"><b>Unsupervised Cross-lingual Adaptation for Sequence Tagging and Beyond </b>
+      <a href="https://arxiv.org/abs/2010.12405">[paper]</a>. Xin Li, Lidong Bing, Wenxuan Zhang, Zheng Li, and Wai Lam. 
+      <i>Preprint arXiv:2010.12405</i>, 2020.<br/></font>
+     </p>
+        </li>
+
+  
+  
+        <li>
+          <p> <font size="3.5"><b>Salience Estimation with Multi-Attention Learning for Abstractive Text Summarization </b>
+      <a href="https://arxiv.org/abs/2004.03589">[paper]</a>. Piji Li, Lidong Bing, Zhongyu Wei, and Wai Lam. 
+      <i>Preprint arXiv:2004.03589</i>, 2020.<br/></font>
+     </p>
+        </li>
+
+        <li>
+          <p> <font size="3.5"><b>Improving Question Generation With to the Point Context </b>
+      <a href="https://aclanthology.org/D19-1317/">[paper]</a>. Jingjing Li, Yifan Gao, Lidong Bing, Irwin King, Michael R. Lyu. 
+      <i>The 2019 Conference on Empirical Methods in Natural Language Processing (<b>EMNLP'19</b>)</i>, 2019.<br/></font>
+     </p>
+        </li>
+
+
+        <li>
+          <p> <font size="3.5"><b>Using Customer Service Dialogues for Satisfaction Analysis with Context-Assisted Multiple Instance Learning </b>
+      <a href="https://aclanthology.org/D19-1019/">[paper]</a>. Kaisong Song, Lidong Bing, Wei Gao, Jun Lin, Lujun Zhao, Jiancheng Wang, Changlong Sun, Xiaozhong Liu, Qiong Zhang. 
+      <i>The 2019 Conference on Empirical Methods in Natural Language Processing (<b>EMNLP'19</b>)</i>, 2019.<br/></font>
+     </p>
+        </li>
+
+  
+        <li>
+          <p> <font size="3.5"><b>Hierarchical Pointer Net Parsing </b>
+      <a href="https://aclanthology.org/D19-1093/">[paper]</a>. Linlin Liu, Xiang Lin, Shafiq Joty, Simeng Han, Lidong Bing. 
+      <i>The 2019 Conference on Empirical Methods in Natural Language Processing (<b>EMNLP'19</b>)</i>, 2019.<br/></font>
+     </p>
+        </li>
+
+        <li>
+          <p> <font size="3.5"><b>Semi-supervised Text Style Transfer: Cross Projection in Latent Space </b>
+      <a href="https://aclanthology.org/D19-1499/">[paper]</a>. Mingyue Shang, Piji Li, Zhenxin Fu, Lidong Bing, Dongyan Zhao, Shuming Shi, Rui Yan. 
+      <i>The 2019 Conference on Empirical Methods in Natural Language Processing (<b>EMNLP'19</b>)</i>, 2019.<br/></font>
+     </p>
+        </li>
+
+
+        <li>
+          <p> <font size="3.5"><b>Tackling Long-Tailed Relations and Uncommon Entities in Knowledge Graph Completion </b>
+      <a href="https://aclanthology.org/D19-1024/">[paper]</a>. Zihao Wang, Kwunping Lai, Piji Li, Lidong Bing, Wai Lam. 
+      <i>The 2019 Conference on Empirical Methods in Natural Language Processing (<b>EMNLP'19</b>)</i>, 2019.<br/></font>
+     </p>
+        </li>
+
+
+        <li>
+          <p> <font size="3.5"><b>Transferable End-to-End Aspect-based Sentiment Analysis with Selective Adversarial Learning 
+      </b><a href="https://aclanthology.org/D19-1466/">[paper]</a>. Zheng Li, Xin Li, Ying Wei, Lidong Bing, Yu Zhang, Qiang Yang. 
+      <i>The 2019 Conference on Empirical Methods in Natural Language Processing (<b>EMNLP'19</b>)</i>, 2019.<br/></font>
+     </p>
+        </li>
+
+
+        <li>
+          <p> <font size="3.5"><b>A Knowledge Regularized Hierarchical Approach for Emotion Cause Analysis </b>
+      <a href="https://aclanthology.org/D19-1563/">[paper]</a>. Chuang Fan, Hongyu Yan, Jiachen Du, Lin Gui, Lidong Bing, Min Yang, Ruifeng Xu, Ruibin Mao. 
+      <i>The 2019 Conference on Empirical Methods in Natural Language Processing (<b>EMNLP'19</b>)</i>, 2019.<br/></font>
+     </p>
+        </li>
+
+
+        <li>
+          <p> <font size="3.5"><b>Who Is Speaking to Whom? Learning to Identify Utterance Addressee in Multi-Party Conversations </b>
+      <a href="https://aclanthology.org/D19-1199/">[paper]</a>. Ran Le, Wenpeng Hu, Mingyue Shang, Zhenjun You, Lidong Bing, Dongyan Zhao, Rui Yan. 
+      <i>The 2019 Conference on Empirical Methods in Natural Language Processing (<b>EMNLP'19</b>)</i>, 2019.<br/></font>
+     </p>
+        </li>
+
+  
+
+        <li>
+          <p> <font size="3.5"><b>Exploiting BERT for End-to-End Aspect-Based Sentiment Analysis </b>
+      <a href="https://aclanthology.org/D19-5505/">[paper]</a>. Xin Li, Lidong Bing, Wenxuan Zhang, Wai Lam. 
+      <i>EMNLP Workshop W-NUT</i>, 2019.<br/></font>
+     </p>
+        </li>
+
+
+        <li>
+          <p> <font size="3.5"><b>Difficulty Controllable Generation of Reading Comprehension Questions </b>
+      <a href="https://www.ijcai.org/Proceedings/2019/0690">[paper]</a>. Yifan Gao, Lidong Bing, Wang Chen, Irwin King, Michael R. Lyu. 
+      <i>The 28th International Joint Conference on Artificial Intelligence (<b>IJCAI'19</b>)</i>, 2019.<br/></font>
+     </p>
+        </li>
+
+
+
+        <li>
+          <p> <font size="3.5"><b>An Integrated Approach for Keyphrase Generation via Exploring thePower of Retrieval and Extraction </b>
+      <a href="https://aclanthology.org/N19-1292/">[paper]</a>. Wang Chen, Hou Pong Chan, Piji Li, Lidong Bing, Irwin King. 
+      <i>The 17th Annual Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (<b>NAACL-HLT'19</b>)</i>, 2019.<br/></font>
+     </p>
+        </li>
+
+
+
+        <li>
+          <p> <font size="3.5"> <b>Persona-Aware Tips Generation </b>
+      <a href="https://arxiv.org/abs/1903.02156">[paper]</a>. Piji Li, Zihao Wang, Lidong Bing, Wai Lam.
+      <i>The Web Conference (<b>WWW'19</b>)</i>, 2019.<br/></font>
+     </p>
+        </li>
+
+
+        <li>
+          <p> <font size="3.5"><b>Generating Distractors for Reading Comprehension Questions from Real Examinations </b>
+      <a href="https://arxiv.org/abs/1809.02768">[paper]</a> <a href="https://github.com/Evan-Gao/Distractor-Generation-RACE">[DATASET]</a>. 
+      Yifan Gao, Lidong Bing, Piji Li, Irwin King, Michael R. Lyu. 
+      <i>The Thirty-Third AAAI Conference on Artificial Intelligence (<b>AAAI'19</b>)</i>, 2019.<br/></font>
+     </p>
+        </li>
+  
+
+
+        <li>
+          <p> <font size="3.5"><b>A Unified Model for Opinion Target Extraction and Target Sentiment Prediction </b>
+      <a href="https://arxiv.org/abs/1811.05082">[paper]</a> <a href="https://github.com/lixin4ever/E2E-TBSA">[CODE]</a>. 
+      Xin Li, Lidong Bing, Piji Li, Wai Lam. 
+      <i>The Thirty-Third AAAI Conference on Artificial Intelligence (<b>AAAI'19</b>)</i>, 2019.<br/></font>
+     </p>
+        </li>
+  
+
+
+
+        <li>
+          <p> <font size="3.5"><b>Learning to Write Stories with Thematic Consistency and Wording Novelty  </b>
+      <a href="https://www.aaai.org/ojs/index.php/AAAI/article/view/3993">[paper]</a>. 
+      Juntao Li, Lidong Bing, Lisong Qiu, Min Chen, Dongyan Zhao, Rui Yan. 
+      <i>The Thirty-Third AAAI Conference on Artificial Intelligence (<b>AAAI'19</b>)</i>, 2019.<br/></font>
+     </p>
+        </li>
+  
+
+
+        <li>
+          <p> <font size="3.5"><b>Abstractive Text Summarization by Incorporating Reader Comments </b>
+      <a href="https://arxiv.org/abs/1812.05407">[paper]</a>. Shen Gao, Xiuying Chen, Piji Li, Zhaochun Ren, Lidong Bing, Dongyan Zhao, Rui Yan. 
+      <i>The Thirty-Third AAAI Conference on Artificial Intelligence (<b>AAAI'19</b>)</i>, 2019.<br/></font>
+     </p>
+        </li>
+  
+
+
+
+        <li>
+          <p> <font size="3.5"><b>Actor-Critic based Training Framework for Abstractive Summarization </b>
+      <a href="https://arxiv.org/abs/1803.11070">[paper]</a>. Piji Li, Lidong Bing, and Wai Lam. 
+      <i>arXiv:1803.11070</i>, 2018.<br/></font>
+     </p>
+        </li>
+
+        <li>
+          <p> <font size="3.5"><b>Semi-Supervised Learning with Declaratively Specified Entropy Constraints  </b>
+      <a href="https://papers.nips.cc/paper/7695-semi-supervised-learning-with-declaratively-specified-entropy-constraints.pdf">[paper]</a>. 
+      Haitian Sun, Lidong Bing, and William W. Cohen. 
+      <i>Advances in Neural Information Processing Systems 31 (<b>NeurIPS'18</b>)</i>, 2018.<br/></font>
+     </p>
+        </li>
+
+
+
+        <li>
+          <p> <font size="3.5"><b>QuaSE: Sequence Editing (Accurate Text Style Transfer) under Quantifiable Guidance  </b>
+      <a href="https://arxiv.org/abs/1804.07007">[paper]</a><a href="https://bitbucket.org/leoeaton/quase/src/master/">[CODE]</a>. 
+      Yi Liao, Lidong Bing, Piji Li, Shuming Shi, Wai Lam, and Tong Zhang.  
+      <i>Proceedings of the Conference on Empirical Methods in Natural Language Processing (<b>EMNLP'18</b>)</i>, Oct 2018.<br/></font>
+     </p>
+        </li>
+
+
+        <li>
+          <p> <font size="3.5"><b>Variational Autoregressive Decoder for Neural Response Generation  </b>
+      <a href="https://aclanthology.org/D18-1354">[paper]</a>. Jiachen Du, Wenjie Li, Yulan He, Ruifeng Xu, Lidong Bing and Xuan Wang.  
+      <i>Proceedings of the Conference on Empirical Methods in Natural Language Processing (<b>EMNLP'18</b>)</i>, Oct 2018.<br/></font>
+     </p>
+        </li>
+
+
+
+
+        <li>
+          <p> <font size="3.5"><b>Hybrid Neural Attention for Agreement/Disagreement Inference in Online Debates  </b>
+      <a href="https://aclanthology.org/D18-1069">[paper]</a>. Di Chen, Jiachen Du, Lidong Bing and Ruifeng Xu.  
+      <i>Proceedings of the Conference on Empirical Methods in Natural Language Processing (<b>EMNLP'18</b>)</i>, Oct 2018.<br/></font>
+     </p>
+        </li>
+
+
+
+        <li>
+          <p> <font size="3.5"><b>Estimating Marginal Probabilities of n-grams for Recurrent Neural Language Models  </b>
+      <a href="https://aclanthology.org/D18-1322">[paper]</a>. Thanapon Noraset, Doug Downey and Lidong Bing.  
+      <i>Proceedings of the Conference on Empirical Methods in Natural Language Processing (<b>EMNLP'18</b>)</i>, Oct 2018.<br/></font>
+     </p>
+        </li>
+
+
+
+        <li>
+          <p> <font size="3.5"><b>Aspect Term Extraction with History Attention and Selective Transformation </b>
+      <a href="https://www.ijcai.org/proceedings/2018/0583.pdf">[paper]</a> 
+      <a href="https://github.com/lixin4ever/HAST/tree/master/raw_data"> [DATASET]</a>
+     <a href="https://github.com/lixin4ever/HAST">[CODE]</a>. 
+      Xin Li, Lidong Bing, Piji Li, Wai Lam, and Zhimou Yang. 
+      <i>The 27th International Joint Conference on Artificial Intelligence (<b>IJCAI'18 </b>).</i> July 2018.<br/></font>
+     </p>
+        </li>
+
+        <li>
+          <p> <font size="3.5"><b>Transformation Networks for Target-Oriented Sentiment Classification </b>
+      <a href="https://aclanthology.org/P18-1087">[paper]</a>
+      <a href="https://github.com/lixin4ever/TNet">[CODE]</a>
+      <a href="https://github.com/lixin4ever/TNet/tree/master/dataset">[DATASET]</a>. 
+      Xin Li, Lidong Bing, Wai Lam, and Bei Shi. 
+      <i>Proceedings of the 56th Annual Meeting of the Association for Computational Linguistics (<b>ACL'18 </b>).</i> July 2018.<br/></font>
+     </p>
+        </li>
+
+        <li>
+          <p> <font size="3.5"><b>Learning Domain-Sensitive and Sentiment-Aware Word Embeddings </b>
+      <a href="https://arxiv.org/abs/1805.03801">[paper]</a>. Bei Shi, Zihao Fu, Lidong Bing, and Wai Lam. 
+      <i>Proceedings of the 56th Annual Meeting of the Association for Computational Linguistics (<b>ACL'18</b>).</i> July 2018.<br/></font>
+     </p>
+        </li>
+
+        <li>
+          <p> <font size="3.5"> <b>Learning a Unified Embedding Space of Web Search from Large-scale Query Log </b>
+      <a href="pub/KBS2018_bing.pdf">[paper]</a>. Lidong Bing, Zheng-Yu Niu, Piji Li, Wai Lam, and Haifeng Wang. 
+      <i>Knowl.-Based Syst. (<b>KBS</b>).</i> 2018.<br/></font>
+     </p>
+        </li>
+
+        <li>
+          <p> <font size="3.5"> <b>Joint Modeling of Participant Influence and Latent Topics for Recommendation in Event-based Social Networks </b>
+      <a href="https://doi.org/10.1145/3183712">[paper]</a>. Yi Liao, Wai Lam, Lidong Bing, and Xin Shen. 
+      <i>ACM Transactions on Information Systems (<b>TOIS</b>). </i>2018.<br/>
+    </font> </p>
+        </li>
+
+        <li>
+          <p> <font size="3.5"> <b>Using Graphs of Classifiers to Impose Declarative Constraints on Semi-supervised Learning </b>
+      <a href="https://arxiv.org/abs/1703.01557v2">[paper]</a>. Lidong Bing, Bhuwan Dhingra, and William W. Cohen. 
+      <i>Proceedings of the 26th International Joint Conference on Artificial Intelligence (<b>IJCAI'17</b>).</i> Aug 2017.<br/></font>
+     </p>
+        </li>
+  
+        <li>
+          <p> <font size="3.5"> <b>Bootstrapping Distantly Supervised IE using Joint Learning and Small Well-structured Corpora </b>
+      <a href="pub/aaai2017_bing.pdf">[paper]</a> <a href="http://curtis.ml.cmu.edu/gnat/biomed/">Some data available here</a>. 
+      Lidong Bing, Bhuwan Dhingra, Kathryn Mazaitis, Jong Hyuk Park, and William W. Cohen. 
+      <i>Proceedings of the 31st AAAI Conference on Artificial Intelligence (<b>AAAI'17</b>).</i> Feb 2017.<br/></font>
+     </p>
+        </li>
+
+    
+
+  <li><p><b>Recurrent Attention Network on Memory for Aspect Sentiment Analysis </b>
+    <a href="pub/emnlp17_aspect_sentiment.pdf">[paper]</a><a href="https://github.com/lixin4ever/NN4ABSA/tree/master/dataset"> [DATASET]</a>. 
+    Peng Chen, Zhongqian Sun, Lidong Bing*, and Wei Yang.  
+    <i> Proceedings of the Conference on Empirical Methods in Natural Language Processing (<b>EMNLP'17</b>)</i>. Sep 2017. (*: corresponding author)</p></li>
+
+  <li> <p> <font size="3.5"> <b>Towards a Language-independent Solution: Knowledge Base Completion by Searching the Web and Deriving Language Pattern</b>
+    <a href="pub/kbs_2017.pdf">[paper]</a>.  Lidong Bing, Zhiming Zhang, Wai Lam, and William W. Cohen. 
+    <i>Knowl.-Based Syst. (<b>KBS</b>).</i> 2017.<br/></font>
+     </p>
+        </li>
+
+  <li><p><b>Deep Recurrent Generative Decoder for Abstractive Text Summarization</b>. Piji Li, Wai Lam, Lidong Bing, and Zihao Wang.
+    <i>Proceedings of the Conference on Empirical Methods in Natural Language Processing (<b>EMNLP'17</b>)</i>. Sep 2017.</p></li>
+
+  <li><p><b>Cascaded Attention based Unsupervised Information Distillation for Compressive Summarization</b>. Piji Li, Wai Lam, Lidong Bing, Weiwei Guo, and Hang Li. 
+    <i>Proceedings of the Conference on Empirical Methods in Natural Language Processing (<b>EMNLP'17</b>)</i>. Sep 2017.<br/></p></li>
+
+
+  <li><p><b>Reader-Aware Multi-Document Summarization: An Enhanced Model and The First Dataset.</b>. Piji Li, Lidong Bing, Wai Lam. 
+    <i>Proceedings of the EMNLP 2017 Workshop on New Frontiers in Summarization(<b>EMNLP-NewSum'17</b>)</i>. Sep 2017.<br/></p></li>
+
+
+        <li>
+          <p> <font size="3.5"><b>Neural Rating Regression with Abstractive Tips Generation for Recommendation </b>
+      <a href="http://lipiji.com/docs/li2017neural.pdf">[paper]</a>.  
+      Piji Li, Zhaochun Ren, Lidong Bing, Wai Lam. 
+      <i>The 40th International ACM SIGIR Conference on Research and Development in Information Retrieval (<b>SIGIR'17</b>).</i> Aug 2017.<br/></font>
+     </p>
+        </li>
+
+
+        <li>
+          <p> <font size="3.5"> <b>Salience Estimation via Variational Auto-Encoders for Multi-Document Summarization</b>
+      <a href="http://lipiji.com/docs/li2017salience.pdf">[paper]</a>. 
+      Piji Li, ZihaoWang, Wai Lam, Zhaochun Ren, and Lidong Bing.  
+      <i>Proceedings of the 31st AAAI Conference on Artificial Intelligence (<b>AAAI'17</b>).</i> Feb 2017.<br/></font>
+     </p>
+        </li>
+
+
+
+
+        <li>
+          <p> <font size="3.5"> <b>Distant IE by Bootstrapping Using Lists and Document Structure </b>
+      <a href="pub/aaai2016_bing.pdf">[paper]</a> <a href="#data_aaai-2016_diebolds">[DATASET]</a>. 
+      Lidong Bing, Mingyang Ling, Richard C. Wang, and William W. Cohen. 
+      <i>Proceedings of the  Thirtieth AAAI Conference on Artificial Intelligence (<b>AAAI'16</b>).</i> Phoenix, Arizona. February 12–17, 2016.<br/></font>
+     </p>
+        </li>
+
+
+        <li>
+          <p> <font size="3.5"> <b>Using Graphs of Classifiers to Impose Constraints on Semi-supervised Relation Extraction </b>
+      <a href="https://aclanthology.org/W16-1301/">[paper]</a>. Lidong Bing, William W. Cohen, Bhuwan Dhingra, and Richard C. Wang. 
+      <i>Proceedings of the 5th Workshop on Automated Knowledge Base Construction (<b>AKBC'16</b>).</i> June, 2016.<br/></font>
+     </p>
+        </li>
+
+
+        <li>
+          <p> <font size="3.5"> <b>Efficient and Scalable Detection of Overlapping Communities in Big Networks</b>. 
+      Tianshu Lyu, Lidong Bing, Zhao Zhang, and Yan Zhang. 
+      <i>Proceedings of The IEEE International Conference on Data Mining (<b>ICDM'16</b>).</i> Dec, 2016.<br/></font>
+     </p>
+        </li>
+
+
+
+        <li>
+          <p> <font size="3.5"> <b>Learning a Semantic Space of Web Search via Session Data </b>
+      <a href="pub/airs2016_bing.pdf">[paper]</a>. Lidong Bing, Zheng-Yu Niu, Wai Lam, and Haifeng Wang.
+      <i>Proceedings of the 20th Asia Information Retrieval Societies Conference (<b>AIRS'16</b>).</i> Dec, 2016.<br/></font>
+     </p>
+        </li>
+
+
+        <li>
+          <p> <font size="3.5"><b>Digesting Multilingual Reader Comments via Latent Discussion Topics with Commonality and Specificity </b>. 
+      Bei Shi, Wai Lam,  Lidong Bing, and Yinqing Xu. 
+      <i>Proceedings of The 25th ACM International Conference on Information and Knowledge Management (<b>CIKM'16</b>).</i> Oct 2016.<br/></font>
+     </p>
+        </li>
+
+
+        <li>
+          <p> <font size="3.5"><b>Detecting Common Discussion Topics Across Culture From News Reader Comments </b>
+      <a href="pub/acl2016_shi.pdf">[paper]</a>. Bei Shi, Wai Lam,  Lidong Bing, and Yinqing Xu.
+      <i>Proceedings of the 54th Annual Meeting of the Association for Computational Linguistics (<b>ACL'16</b>).</i> Berlin, Germany. August 7-12, 2016.<br/></font>
+     </p>
+        </li>
+  
+        <li>
+          <p> <font size="3.5"> <b>Unsupervised Extraction of Popular Product Attributes from Ecommerce Web Sites by Considering Customer Reviews </b>
+      <a href="pub/toit2016_bing.pdf">[paper]</a>. Lidong Bing, Tak-Lam Wong, and Wai Lam. 
+      <i>ACM Transactions on Internet Technology (<b>TOIT</b>).</i> Volume 16 Issue 2, 2016.<br/></font>
+     </p>
+        </li>
+
+
+        <li>
+          <p> <font size="3.5"> <b>CUIS at the NTCIR-12 MobileClick2 Task </b>
+      <a href="pub/ntcir2016_lai.pdf">[paper]</a>. Kwun Ping Lai, Wai Lam, and Lidong Bing. 
+      <i>Proceedings of the 12th NTCIR Conference.</i> Tokyo, Japan. June　7-10, 2016.<br/></font>
+     </p>
+        </li>
+
+        <li>
+          <p> <font size="3.5"> <b>Improving Distant Supervision for Information Extraction Using Label Propagation Through Lists </b>
+      <a href="pub/emnlp2015_bing.pdf">[paper]</a> <a href="#data_emnlp-2015_diel">[DATASET]</a>. 
+      Lidong Bing, Sneha Chaudhari, Richard C. Wang, and William W. Cohen.  
+      <i>Proceedings of Conference on Empirical Methods in Natural Language Processing (<b>EMNLP'15</b>).</i> Lisbon, Portugal. September 17–21, 2015.<br/></font>
+     </p>
+        </li>
+
+
+        <li>
+          <p> <font size="3.5"><b>Multilingual Viewpoint Detection from news comments </b>
+      <a href="pub/ialp2015_shi.pdf">[paper]</a>. Bei Shi, Wai Lam,  Lidong Bing, and Yinqing Xu. 
+      <i>Proceedings of 2015 International Conference on Asian Language Processing (<b>IALP'15</b>).</i> Suzhou, China. October 24-25, 2015.<br/></font>
+     </p>
+        </li>
+            
+  <li>
+          <p> <font size="3.5"><b>A Unified Posterior Regularized Topic Model with Maximum Margin for Learning-to-Rank </b>
+      <a href="pub/cikm2015_shoaib.pdf">[paper]</a>. Shoaib Jameel, Wai Lam, Steven Schockaert, and Lidong Bing. 
+      <i>Proceedings of the 24th ACM International Conference on Information and Knowledge Management (<b>CIKM'15</b>).</i> Melbourne, Australia. October 19-23, 2015.<br/></font>
+     </p>
+        </li>
+
+        <li>
+          <p> <font size="3.5"> <b>Abstractive Multi-Document Summarization via Phrase Selection and Merging </b>
+      <a href="pub/acl2015-bing.pdf">[paper]</a>. Lidong Bing, Piji Li, Yi Liao, Wai Lam, Weiwei Guo, and Rebecca Passonneau. 
+      <i>Proceedings of the 53rd Annual Meeting of the Association for Computational Linguistics (<b>ACL'15</b>).</i> Beijing, China. July 26-31, 2015.<br/></font>
+     </p>
+        </li>
+
+
+        <li>
+          <p> <font size="3.5"> <b>Reader-Aware Multi-Document Summarization via Sparse Coding </b>
+      <a href="pub/IJCAI2015-piji.pdf">[paper]</a>. Piji Li, Lidong Bing, Wai Lam, Hang Li and Yi Liao. 
+      <i>Proceedings of the 24th International Joint Conference on Artificial Intelligence (<b>IJCAI'15</b>).</i> Buenos Aires, Argentina. July 25-31, 2015.<br/></font>
+     </p>
+        </li>
+
+
+        <li>
+          <p> <font size="3.5"> <b>Supervised Topic Models with Word Order Structure for Document Classification and Retrieval Learning </b>
+      <a href="pub/irj-shoaib.pdf">[paper]</a>. Shoaib Jameel, Wai Lam, Lidong Bing.
+      <i>Information Retrieval Journal. </i>2015.<br/>
+    </font> </p>
+        </li>
+
+
+        <li>
+          <p> <font size="3.5"> <b>Web Query Reformulation via Joint Modeling of Latent Topic Dependency and Term Context </b>
+      <a href="pub/tois_preprint_version.pdf">[paper]</a>. Lidong Bing, Wai Lam, Tak-Lam Wong, and Shoaib Jameel. 
+      <i>ACM Transactions on Information Systems (<b>TOIS</b>). Volume 33, pp. 6:1-6:38. </i>2015.<br/>
+    </font> </p>
+        </li>
+
+    
+
+        <li><p> <font size="3.5"> <b>Adaptive Concept Resolution for Document Representation and Its Applications in Text Mining </b>
+    <a href="pub/kbs_2015.pdf">[paper]</a>. Lidong Bing, Shan Jiang, Wai Lam, Yan Zhang, Shoaib Jameel.
+    <i> Knowledge-Based Systems (<b>KBS</b>) 74: 1-13.</i> 2015.<br/></font>
+     </p>
+        </li>
+
+
+        <li>
+          <p> <font size="3.5"><b>Nonparametric Topic Modeling using Chinese Restaurant Franchise with Buddy Customers </b>
+      <a href="pub/ecir2015_shoaib.pdf">[paper]</a>. Shoaib Jameel, Wai Lam, and Lidong Bing. 
+      <i>The annual European Conference on Information Retrieval (<b>ECIR'15</b>).</i> Nienna, Austria. March 29 to April 2, 2015. <br/></font>
+     </p>
+        </li>
+
+        <li>
+          <p> <font size="3.5"><b>Web Page Segmentation with Structured Prediction and its Application in Web Page Classification </b>
+      <a href="pub/sigir2014-bing.pdf">[paper]</a>. Lidong Bing, Rui Guo, Wai Lam, Zheng-Yu Niu and Haifeng Wang. 
+      <i>The 37rd international ACM SIGIR conference on research and development in Information Retrieval (<b>SIGIR'14</b>).</i> Gold Coast, Australia. July 6-11, 2014.<br/></font>
+     </p>
+        </li>
+        <li>
+         <p> <font size="3.5"><b>Website Community Mining from Query Logs with Two-phase Clustering </b>
+     <a href="pub/cicling2014-bing.pdf">[paper]</a>. Lidong Bing, Wai Lam, Shoaib Jameel, and Chunliang Lu.  
+     <i>Proceedings of the 15th International Conference on Intelligent Text Processing and Computational Linguistics(<b>CICLing'14</b>).</i> Kathmandu, Nepal. April 6-12, 2014.<br/></font>
+     </p>
+        </li>
+
+
+        <li>
+          <p> <font size="3.5"><b>Robust Detection of Semi-structured Web Records Using DOM Structure Knowledge Driven Model </b>
+      <a href="pub/tweb_preprint_version.pdf">[paper]</a>  <a href="#data_tweb-2013_skoga">[DATASET]</a>. 
+      Lidong Bing, Wai Lam, and Tak-Lam Wong. 
+      <i>ACM Transactions on the Web (<b>TWEB</b>) 7(4): 21.</i> 2013.<br/></font>
+     </p>
+        </li>
+  
+        <li>
+          <p> <font size="3.5"><b>Web Entity Detection for Semi-structured Text Data Records with Unlabeled Data </b>
+      <a href="pub/ijcla13.pdf">[paper]</a>. Chunliang Lu, Lidong Bing, Wai Lam, Ki Chan and Yuan Gu. 
+      <i> International Journal of Computational Linguistics and Applications (<b>IJCLA</b>).</i> 2013.<br/></font>
+     </p>
+        </li>
+
+        <li>
+          <p> <font size="3.5"><b>Towards an Enhanced and Adaptable Ontology by Distilling and Assembling Online Encyclopedias </b>
+      <a href="pub/p1703-jiang.pdf">[paper]</a>. Shan Jiang, Lidong Bing, and Yan Zhang.
+      <i>Proceedings of the 22nd ACM Conference on Information and Knowledge Management (<b>CIKM'13</b>)</i>, San Francisco, CA, USA. October 27 to November 1, 2013. <br/></font>
+    </p>
+        </li>
+
+
+        <li>
+          <p> <font size="3.5"><b>Structured Positional Entity Language Model for Enterprise Entity Retrieval </b>
+      <a href="pub/p129-lu.pdf">[paper]</a>. Chunliang Lu, Lidong Bing, and Wai Lam. 
+      <i>Proceedings of the 22nd ACM Conference on Information and Knowledge Management (<b>CIKM'13</b>)</i>, San Francisco, CA, USA. October 27 to November 1, 2013.<br/></font>
+    </p>
+        </li>
+
+
+        <li>
+          <p> <font size="3.5"><b>Wikipedia Entity Expansion and Attribute Extraction from the Web Using Semi-supervised Learning </b>
+      <a href="pub/wsdm71-bing.pdf">[paper]</a>. Lidong Bing, Wai Lam, and Tak-Lam Wong. 
+      <i>Proceedings of the 6th ACM International Conference on Web Search and Data Mining (<b>WSDM'13</b>).</i> Rome, Italy. February 4-8, 2013.<br/></font>
+     </p>
+        </li>
+
+        <li>
+          <p> <font size="3.5"><b>Unsupervised Extraction of Popular Product Attributes from Web Sites</b>
+      <a href="pub/AIRS53-bing.pdf"> [paper]</a>. Lidong Bing, Tak-Lam Wong, and Wai Lam. 
+      <i>Proceedings of the 8th Asia Information Retrieval Societies Conference (<b>AIRS'12</b>)</i>, Tianjin, China. December 17-19, 2012</font>
+          </p>
+        </li>
+
+        <li>
+          <p> <font size="3.5"><b>Towards a Unified Solution: Data Record Region Detection and Segmentation </b>
+      <a href="pub/CIKM11-bing1.pdf">[paper]</a>. Lidong Bing, Wai Lam, and Yuan Gu. 
+      <i>Proceedings of the 20th ACM Conference on Information and Knowledge Management (<b>CIKM'11</b>)</i>, Glasgow, Scotland, UK. October 24-28, 2011.<br/></font>
+           </p>
+        </li>
+
+
+
+        <li>
+          <p> <font size="3.5"><b>Using Query Log and Social Tagging to Refine Queries Based on Latent Topics </b>
+      <a href="pub/CIKM11-bing2.pdf">[paper] (typo fixed)</a>. Lidong Bing, Tak-Lam Wong, and Wai Lam. 
+      <i>Proceedings of the 20th ACM Conference on Information and Knowledge Management (<b>CIKM'11</b>)</i>, Glasgow, Scotland, UK. October 24-28, 2011.<br/></font>
+    </p>
+        </li>
+
+
+        <li>
+          <p> <font size="3.5"><b>Ontology Enhancement and Concept Granularity Learning: Keeping Yourself Current and Adaptive </b>
+      <a href="pub/KDD11-jiang.pdf">[paper]</a>. Shan Jiang, Lidong Bing, Bai Sun, Yan Zhang, and Wai Lam. 
+      <i>Proceedings of the 17th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (<b>KDD'11</b>)</i>, San Diego, USA. August 21-24, 2011.<br/></font>
+  </p>
+        </li>
+
+
+
+        <li>
+          <p> <font size="3.5"><b>Investigation of Web Query Refinement via Topic Analysis and Learning with Personalization </b>
+      <a href="pub/SIGIR-QRU11-bing.pdf">[paper]</a>. Lidong Bing and Wai Lam. 
+      <i>Proceedings of the 2nd SIGIR Workshop on Query Representation and Understanding (<b>SIGIR-QRU</b>)</i>, Beijing, China. July 28, 2011.<br/>
+          </font></p>
+        </li>
+
+
+        <li>
+         <p> <font size="3.5"><b>Normalizing Web Product Attributes and Discovering Domain Ontology with Minimal Effort </b>
+     <a href="pub/WSDM11-wong.pdf">[paper]</a>. Tak-Lam Wong, Lidong Bing, and Wai Lam. 
+     <i>Proceedings of the 4th ACM International Conference on Web Search and Data Mining (<b>WSDM'11</b>)</i>, Hong Kong. February 9-12, 2011
+          </font></p>
+        </li>
+
+
+        <li>
+          <p> <font size="3.5"> <b>Learning Ontology Resolution for Document Representation and its Applications in Text Mining </b>
+      <a href="pub/CIKM10-bing.pdf">[paper]</a>. Lidong Bing, Bai Sun, Shan Jiang, Yan Zhang, and Wai Lam. 
+      <i>Proceedings of the 19th ACM Conference on Information and Knowledge Management (<b>CIKM'10</b>)</i>, Toronto, Canada. October 26-30, 2010.<br/>
+          </font></p>
+        </li>
+
+        <li>
+          <p> <font size="3.5"><b>Primary Content Extraction with Mountain Model </b>
+      <a href="pub/CIT08-bing.pdf">[paper]</a>. Lidong Bing, Yexin Wang, Yan Zhang, and Hui Wang. 
+      <i>Proceedings of the IEEE 8th International Conference on Computer and Information Technology (<b>CIT'08</b>)</i>, Sydney, Australia. July 8-11, 2008.<br/>
+          </font></p>
+        </li>
+ 
+  </ul>
+  
+  
+
+  <h3><a name="Talks"></a>Talks</h3>
+  <ul>
+    <li> Nov 2023. Invited talk on "Research and Implementation of Large Language Models at Alibaba DAMO Academy" at <a href="https://wing-nus.github.io/ssnlp-2023/">SSNLP 2023</a>.</li>
+    <li> Mar-Apr 2023. Invited talk on "Towards Solving Low-resource & Multilingual NLP Problems and a Pilot Study with LLMs" at Nanjing, Zhejiang, Fudan, and Shanghai Jiao Tong universities.</li>
+  </ul>
+
+  <h3><a name="Professional_Activities"></a>Professional Service</h3>
+  <ul>
+    <li>
+      <p><b>Associate/Action Editor and Reviewer of journals</b>:<br/> 
+        Transactions of the Association for Computational Linguistics (TACL)<br/> 
+        ACM Transactions on Information Systems (TOIS)<br/> 
+        Computational Linguistics (CL)<br/> 
+        IEEE Transactions on Knowledge and Data Engineering (TKDE)<br/> 
+        ACM Transactions on the Web (TWEB)<br/> 
+        ACM Transactions on Intelligent Systems and Technology (ACM TIST)<br/> 
+        Neurocomputing<br/>
+        Neural Networks<br/>
+        Neural Computing and Applications (NCA)<br/>
+        Knowledge-based Systems (KBS) <br/>
+        Information Processing and Management (IPM) <br/>
+      </p>
+    </li>
+    <li>
+      <p><b>Regular AC, SPC and PC of conferences</b>:<br/> 
+        The Annual Meeting of the Association for Computational Linguistics (ACL)<br/> 
+        The Conference on Empirical Methods in Natural Language Processing (EMNLP)<br/> 
+        The AAAI Conference on Artificial Intelligence (AAAI)<br/> 
+        The International Joint Conference on Artificial Intelligence (IJCAI) <br/> 
+        The Conference on Neural Information Processing Systems (NeurIPS)  <br/> 
+        The International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR)<br/>  
+        The International World Wide Web Conference (WWW) <br/>
+        The ACM International Conference on Information and Knowledge Management (CIKM) <br/> 
+      </p>
+    </li>
+  </ul>
+</div>
+</body>
+
+</html>
