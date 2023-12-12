@@ -1121,7 +1121,7 @@ footer {
 
 .mini-intro h1,
 .mini-intro p {
-    max-width: 75%;
+    max-width: 100%;
     padding-right: .5rem
 }
 
